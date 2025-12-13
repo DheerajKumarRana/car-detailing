@@ -1,0 +1,264 @@
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(5px);
+}
+
+.modalContent {
+    background-color: #1e1e1e;
+    /* Fallback */
+    background: linear-gradient(145deg, #1e1e1e, #111111);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modalHeader {
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.5rem;
+    /* Reduced padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalTitle {
+    color: var(--primary-color, #FFF326);
+    font-family: var(--font-2, "Libre Franklin", sans-serif);
+    font-weight: 700;
+    font-size: 1.5rem;
+    /* Reduced font size */
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.closeButton {
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    width: 28px;
+    /* Slightly smaller */
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    color: white;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: rotate(90deg);
+}
+
+.modalBody {
+    padding: 1.5rem;
+    /* Reduced padding */
+}
+
+.modalDescription {
+    color: #aaaaaa;
+    margin-bottom: 1rem;
+    /* Reduced margin */
+    font-size: 0.9rem;
+    /* Reduced font size */
+    line-height: 1.4;
+}
+
+.formGroup {
+    margin-bottom: 0.75rem;
+    /* Reduced margin */
+}
+
+.label {
+    display: block;
+    color: #ffffff;
+    font-size: 0.85rem;
+    /* Reduced font size */
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    /* Reduced margin */
+    letter-spacing: 0.02em;
+}
+
+.inputGroup {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 0.8rem;
+    color: #666;
+    z-index: 10;
+    pointer-events: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.input,
+.select,
+.textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    /* Slightly tighter radius */
+    padding: 0.6rem 0.8rem 0.6rem 2.2rem;
+    /* Reduced padding */
+    color: white;
+    font-size: 0.95rem;
+    /* Slightly smaller text */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    font-family: var(--font-1, "Public Sans", sans-serif);
+}
+
+.textarea {
+    padding-left: 0.8rem;
+    /* No icon usually for textarea */
+    resize: none;
+    /* Disable resize to keep layout fixed */
+    min-height: 60px;
+    /* Reduced min-height */
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    border-color: var(--primary-color, #FFF326);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 0 3px rgba(255, 243, 38, 0.1);
+}
+
+.input:focus+.inputIcon,
+.inputGroup:focus-within .inputIcon {
+    color: var(--primary-color, #FFF326);
+}
+
+.select option {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 8px;
+}
+
+.submitButton {
+    background-color: var(--primary-color, #FFF326);
+    color: #1e1e1e;
+    border: none;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    /* Reduced padding */
+    border-radius: 50px;
+    width: 100%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    /* Reduced margin */
+    position: relative;
+    overflow: hidden;
+}
+
+.submitButton:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.submitButton:active {
+    transform: translateY(0);
+}
+
+/* Dropdown Styles */
+.dropdownContainer {
+    position: relative;
+}
+
+.dropdownList {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    margin-top: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.dropdownItem {
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+}
+
+.dropdownItem:hover {
+    background-color: rgba(255, 243, 38, 0.1);
+    color: var(--primary-color, #FFF326);
+}
+
+/* Scrollbar styles for dropdown */
+.dropdownList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdownList::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.dropdownList::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 3px;
+}
+
+.dropdownList::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .modalContent {
+        margin: 10px;
+    }
+
+    .modalHeader {
+        padding: 1rem;
+    }
+
+    .modalBody {
+        padding: 1rem;
+    }
+
+    .modalTitle {
+        font-size: 1.25rem;
+    }
+
+    .label {
+        font-size: 0.8rem;
+    }
+
+    .input,
+    .select,
+    .textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.7rem 0.5rem 2rem;
+    }
+
+    .inputIcon {
+        left: 0.7rem;
+        font-size: 0.8rem;
+    }
+}

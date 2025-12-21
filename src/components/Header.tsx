@@ -2,22 +2,27 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import AppointmentModal from './AppointmentModal';
 import StickyVideoWidget from './StickyVideoWidget';
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path ? 'active' : '';
+  const isDropdownActive = (paths: string[]) => paths.includes(pathname) ? 'active' : '';
 
   return (
     <>
-      <header className="header">
+      <header className="header header-sticky">
         <div className="b-container">
           <nav className="navbar navbar-expand-lg bg-accent-color" aria-label="Offcanvas navbar large">
             <div className="container-fluid">
               <div className="logo-box">
                 <Link className="navbar-brand" href="/">
                   {/* Ensure width/height or use fill for Next.js Image, or just regular img if simpler given the template CSS */}
-                  <img src="/images/Main-Logo.png" alt="Main Logo" className="img-fluid" />
+                  <img src="/images/latest2.png" alt="Main Logo" className="img-fluid" style={{ maxHeight: '60px' }} />
                 </Link>
               </div>
               <button
@@ -39,7 +44,7 @@ export default function Header() {
                 <div className="offcanvas-header" id="offcanvasNavbarLabel">
                   <div className="logo-box">
                     <Link className="navbar-brand" href="/">
-                      <img src="/images/Main-Logo.png" alt="Drawer Logo" className="img-fluid" />
+                      <img src="/images/latest2.png" alt="Drawer Logo" className="img-fluid" style={{ maxHeight: '50px' }} />
                     </Link>
                   </div>
                   <button
@@ -49,22 +54,22 @@ export default function Header() {
                     aria-label="Close"
                   ></button>
                 </div>
-                <div className="offcanvas-body">
-                  <ul className="navbar-nav mx-auto my-lg-4 gap-lg-2 gap-xl-4">
+                <div className="offcanvas-body p-lg-0 d-lg-flex align-items-center">
+                  <ul className="navbar-nav mx-auto gap-lg-3 gap-xl-5 align-items-center"> {/* Removed my-lg-4, added align-items-center */}
                     <li className="nav-item">
-                      <Link className="nav-link active" aria-current="page" href="/">
+                      <Link className={`nav-link ${isActive('/')}`} aria-current="page" href="/">
                         Homepage
                       </Link>
                     </li>
 
                     <li className="nav-item">
-                      <Link className="nav-link" href="/services">
+                      <Link className={`nav-link ${isActive('/services')}`} href="/services">
                         Services
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
                       <a
-                        className="nav-link dropdown-toggle"
+                        className={`nav-link dropdown-toggle ${isDropdownActive(['/pricing', '/team'])}`}
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -74,30 +79,30 @@ export default function Header() {
                       </a>
                       <ul className="dropdown-menu">
                         <li>
-                          <Link className="dropdown-item" href="/pricing">
+                          <Link className={`dropdown-item ${isActive('/pricing')}`} href="/pricing">
                             Pricing Plan
                           </Link>
                         </li>
                         <li>
-                          <Link className="dropdown-item" href="/team">
+                          <Link className={`dropdown-item ${isActive('/team')}`} href="/team">
                             Team
                           </Link>
                         </li>
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/about-us">
+                      <Link className={`nav-link ${isActive('/about-us')}`} href="/about-us">
                         About Us
                       </Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/contact-us">
+                      <Link className={`nav-link ${isActive('/contact-us')}`} href="/contact-us">
                         Contact Us
                       </Link>
                     </li>
                   </ul>
-                  <div className="mt-3">
-                    <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-secondary d-none d-lg-block">
+                  <div className="ms-lg-3">
+                    <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary d-none d-lg-block">
                       Make Appointment
                     </button>
                   </div>

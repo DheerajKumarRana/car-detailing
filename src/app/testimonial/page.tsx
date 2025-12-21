@@ -39,9 +39,7 @@ export default function Testimonial() {
                 <div className="b-container position-relative z-1">
                     <h6 className="text-color-2 text-center pt-4">CUSTOMER REVIEWS</h6>
                     <h2 className="heading text-center mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                        Customer <span className="text-primary-color">Experiences</span> That
-                        <br />
-                        Speak For Themselves
+                        Hear From Our Satisfied Customers
                     </h2>
 
                     <div className="row g-4 g-xl-5 my-5">
@@ -50,40 +48,38 @@ export default function Testimonial() {
                             <div className="d-flex flex-column h-100 gap-4">
                                 <div className="card p-4">
                                     <p>
-                                        Absolutely incredible service! My car looks brand new inside and out. The attention to detail was
-                                        phenomenal. I couldn’t be happier with the results. Highly recommend!
+                                        "I was skeptical about paying for detailing, but Sunrise completely changed my mind. My 5-year-old SUV looks better than the day I bought it. The team was professional, thorough, and genuinely cared about doing great work. Worth every penny!"
                                     </p>
                                     <div className="d-flex align-items-center mt-auto pt-3">
                                         <img
                                             src="/images/Place-Holder-64x64.jpg"
-                                            alt="Raul Axios"
+                                            alt="Sahil Shrivastav"
                                             className="rounded-circle me-3"
                                             width="60"
                                             height="60"
                                         />
                                         <div>
-                                            <h5 className="mb-0">Raul Axios</h5>
-                                            <small className="text-color-2">Auto Dealer</small>
+                                            <h5 className="mb-0">Sahil Shrivastav</h5>
+                                            <small className="text-color-2">Honda CR-V Owner</small>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="card p-4">
                                     <p>
-                                        I’ve used many car detailing services before, but this one exceeded my expectations. The team was
-                                        professional, friendly, and did an amazing job on my vehicle. It looks flawless!
+                                        "As someone who's particular about my car, I've tried several detailing services. Sunrise Detailing is in a league of their own. The paint correction and ceramic coating they did on my BMW is absolutely flawless. Highly recommend!"
                                     </p>
                                     <div className="d-flex align-items-center mt-auto pt-3">
                                         <img
                                             src="/images/Place-Holder-64x64.jpg"
-                                            alt="Ubeid Una"
+                                            alt="Muskan Kashyap"
                                             className="rounded-circle me-3"
                                             width="60"
                                             height="60"
                                         />
                                         <div>
-                                            <h5 className="mb-0">Ubeid Una</h5>
-                                            <small className="text-color-2">Car Owner</small>
+                                            <h5 className="mb-0">Muskan Kashyap</h5>
+                                            <small className="text-color-2">BMW 5 Series Owner</small>
                                         </div>
                                     </div>
                                 </div>
@@ -94,39 +90,37 @@ export default function Testimonial() {
                             <div className="d-flex flex-column h-100 gap-4">
                                 <div className="card p-4">
                                     <p>
-                                        I was blown away by the transformation! From the deep clean of the interior to the shiny, protected
-                                        exterior, my car looks better than when I first bought it. Truly exceptional work!
+                                        "I brought in my vintage Mustang, and the team treated it like their own. The attention to detail was incredible – they restored the interior, polished the paint to perfection, and even detailed the engine bay. These guys are true professionals."
                                     </p>
                                     <div className="d-flex align-items-center mt-4">
                                         <img
                                             src="/images/Place-Holder-64x64.jpg"
-                                            alt="Taki Wanabe"
+                                            alt="Atul Bhardwaj"
                                             className="rounded-circle me-3"
                                             width="60"
                                             height="60"
                                         />
                                         <div>
-                                            <h5 className="mb-0">Taki Wanabe</h5>
-                                            <small className="text-color-2">Vintage Car Owner</small>
+                                            <h5 className="mb-0">Atul Bhardwaj</h5>
+                                            <small className="text-color-2">1967 Mustang Owner</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="card p-4">
                                     <p>
-                                        The service here is outstanding. The team took extra care in detailing my car, and the results are
-                                        nothing short of amazing. I will definitely return for regular maintenance!
+                                        "Sunrise Detailing transformed my daily driver. The interior smelled like a new car again, and the exterior shine is incredible. The staff was friendly and explained everything they were doing. I'll definitely be back regularly!"
                                     </p>
                                     <div className="d-flex align-items-center mt-auto pt-3">
                                         <img
                                             src="/images/Place-Holder-64x64.jpg"
-                                            alt="Hafsha Jasmine"
+                                            alt="Jatin Malhotra"
                                             className="rounded-circle me-3"
                                             width="60"
                                             height="60"
                                         />
                                         <div>
-                                            <h5 className="mb-0">Hafsha Jasmine</h5>
-                                            <small className="text-color-2">Auto Dealer</small>
+                                            <h5 className="mb-0">Jatin Malhotra</h5>
+                                            <small className="text-color-2">Toyota Camry Owner</small>
                                         </div>
                                     </div>
                                 </div>
@@ -137,39 +131,37 @@ export default function Testimonial() {
                             <div className="d-flex flex-column h-100 gap-4">
                                 <div className="card p-4">
                                     <p>
-                                        This is the best detailing service I’ve ever had. My car looks immaculate, and it feels like I’m
-                                        driving a completely different vehicle. I’ll be a loyal customer from now on!
+                                        "After years of neglect, my truck needed serious help. Sunrise took on the challenge and delivered amazing results. They removed stains I thought were permanent and brought back the shine. Great service at a fair price!"
                                     </p>
                                     <div className="d-flex align-items-center mt-auto pt-3">
                                         <img
                                             src="/images/Place-Holder-64x64.jpg"
-                                            alt="Akio Mirfaq"
+                                            alt="Ajay Hooda"
                                             className="rounded-circle me-3"
                                             width="60"
                                             height="60"
                                         />
                                         <div>
-                                            <h5 className="mb-0">Akio Mirfaq</h5>
-                                            <small className="text-color-2">Car Owner</small>
+                                            <h5 className="mb-0">Ajay Hooda</h5>
+                                            <small className="text-color-2">Ford F-150 Owner</small>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="card p-4">
                                     <p>
-                                        From the moment I walked in, I knew I was in good hands. The staff was knowledgeable and friendly,
-                                        and they did an incredible job on my car. It’s spotless, inside and out!
+                                        "I've been coming to Sunrise Detailing for over two years now, and they never disappoint. Consistent quality, friendly service, and my Audi always looks showroom-perfect. They've earned a customer for life."
                                     </p>
                                     <div className="d-flex align-items-center mt-auto pt-3">
                                         <img
                                             src="/images/Place-Holder-64x64.jpg"
-                                            alt="Olivia Seamo"
+                                            alt="Arun Kumar"
                                             className="rounded-circle me-3"
                                             width="60"
                                             height="60"
                                         />
                                         <div>
-                                            <h5 className="mb-0">Olivia Seamo</h5>
-                                            <small className="text-color-2">Car Collector</small>
+                                            <h5 className="mb-0">Arun Kumar</h5>
+                                            <small className="text-color-2">Audi A4 Owner</small>
                                         </div>
                                     </div>
                                 </div>

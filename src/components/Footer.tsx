@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="row g-4 g-xl-5 mt-5 mx-auto">
                     <div className="col-12 col-xl-4 pe-xl-5 mt-0">
                         <div className="footer-logo-box">
-                            <img src="/images/Main-Logo.png" alt="Footer Logo" className="h-100 object-fit-contain d-block" />
+                            <img src="/images/latest2.png" alt="Footer Logo" className="h-100 object-fit-contain d-block" />
                         </div>
                         <p className="mt-4 text-center text-xl-start">
                             Providing Premium Car Detailing Services That Bring Out the Best in Your Vehicle, Ensuring a Showroom
@@ -54,17 +54,17 @@ export default function Footer() {
                         <div className="mt-2">
                             <h5 className="heading">Visit Our Office</h5>
                             <hr className="border-2 my-2" />
-                            <p className="text-color-2">123 Serenity Lane, Blissfield, CA 90210, United States</p>
+                            <p className="text-color-2">[Your Physical Address]</p>
                         </div>
                         <div className="mt-5">
                             <h5 className="heading">Contact Info</h5>
                             <hr className="border-2" />
-                            <a className="links-primary text-color-2 fw-normal" href="tel:(555)123-4567">
-                                (555) 123-4567
+                            <a className="links-primary text-color-2 fw-normal" href="tel:[Your Phone Number]">
+                                [Your Phone Number]
                             </a>{' '}
                             <br />
-                            <a className="links-primary text-color-2 fw-normal" href="mailto:Info@Yourmail.com">
-                                Info@Yourmail.com
+                            <a className="links-primary text-color-2 fw-normal" href="mailto:info@sunrisedetailing.com">
+                                info@sunrisedetailing.com
                             </a>
                         </div>
                     </div>

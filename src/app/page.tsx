@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import TestimonialsCarousel from '../components/TestimonialsCarousel';
 import Image from 'next/image';
 
 export default function Home() {
@@ -7,18 +8,20 @@ export default function Home() {
       {/* Hero section */}
       <section
         className="section hero position-relative bg-size-cover bg-position-center bg-repeat-no-repeat py-5"
-        style={{ backgroundImage: "url('/images/Place-Holder-1920x1280.jpg')" }}
+        style={{ backgroundImage: "url('/images/test-banner.jpg')", backgroundSize: 'contain', backgroundPosition: 'top center', backgroundColor: '#000' }}
       >
         <div className="bg-overlay"></div>
         <div className="b-container h-100 position-relative z-2">
           <div className="row">
             <div
-              className="col-12 col-xl-8 d-flex flex-column justify-content-start text-center text-xl-start"
-              style={{ paddingTop: '23vh' }}
+              className="col-12 col-xl-8 d-flex flex-column justify-content-start text-center text-xl-start hero-content"
             >
               <h1 className="fw-bolder mb-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                Bring Back the New Car Feel with Our Professional Detailing
+                Experience the Sunrise Difference – Where Every Detail Shines
               </h1>
+              <p className="fs-5 mb-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                Professional car detailing services that restore your vehicle's beauty from sunrise to sunset. We don't just clean cars, we bring them back to life.
+              </p>
               <Link
                 href="/services"
                 className="btn btn-xl btn-cta-primary align-self-center align-self-xl-start mt-4"
@@ -37,25 +40,25 @@ export default function Home() {
           <div className="row d-flex justify-content-end align-items-end feature-box-wrapper g-0 mx-4">
             <div className="col-12 col-md-6 col-xl-3 p-0">
               <div className="feature-box w-100 rounded-start-4" style={{ backgroundColor: '#303030' }}>
-                <h5 className="feature-title">Advanced Detailing Technology</h5>
+                <h5 className="feature-title">Certified Detailing Experts</h5>
                 <p>
-                  Our professional detailing restores your car’s original beauty, leaving it fresh, clean, and like new.
+                  Our team of certified professionals uses industry-leading techniques and premium products to ensure your vehicle receives showroom-quality treatment every time.
                 </p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-xl-3 p-0">
               <div className="feature-box w-100" style={{ backgroundColor: '#3F3F3F' }}>
-                <h5 className="feature-title">Eco-Friendly Products</h5>
+                <h5 className="feature-title">Eco-Conscious Care</h5>
                 <p>
-                  Experience that brand-new car feeling again with our expert detailing that revitalizes every inch.
+                  We believe in protecting your car and the planet. Our eco-friendly products deliver outstanding results while minimizing environmental impact.
                 </p>
               </div>
             </div>
             <div className="col-12 col-xl-3 p-0">
               <div className="feature-box w-100 rounded-end-4" style={{ backgroundColor: '#4F4F4F' }}>
-                <h5 className="feature-title">Satisfaction Guarantee</h5>
+                <h5 className="feature-title">100% Satisfaction Promise</h5>
                 <p>
-                  We bring back your car’s shine, comfort, and cleanliness through professional detailing services.
+                  Your satisfaction is our priority. If you're not completely happy with our service, we'll make it right – guaranteed.
                 </p>
               </div>
             </div>
@@ -100,120 +103,7 @@ export default function Home() {
       </section>
       {/* #about end */}
 
-      {/* Service section */}
-      <section className="section py-5 my-5">
-        <div className="b-container">
-          <h6 className="text-color-2 text-center">OUR TOP SOLUTION</h6>
-          <h2 className="heading text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-            Comprehensive Car Detailing Solutions for<br />
-            A Flawless Finish
-          </h2>
-          <p className="text-color-2 text-center my-4">
-            Experience comprehensive car detailing solutions designed to restore, protect, and enhance your vehicle’s
-            appearance. Our expert team ensures every surface is treated with precision, delivering a flawless finish
-            that looks and feels like new.
-          </p>
 
-          <div className="row justify-content-center">
-            <div className="col-12 text-center">
-              <img
-                src="/images/Place-Holder-900x424.png"
-                className="img-fluid"
-                alt="Crossover Sports Car Yellow"
-                style={{ width: '100%', maxWidth: '900px' }}
-              />
-            </div>
-          </div>
-
-          <div className="row justify-content-center g-4">
-            {/* Service Box */}
-            <div className="col-12 col-md-6 col-xl-3">
-              <div
-                className="service-box top-left position-relative h-100"
-                data-aos="fade-right"
-                data-aos-delay="100"
-                data-aos-duration="800"
-              >
-                <div className="service-icon position-absolute">
-                  <i className="bi bi-arrow-right-short"></i>
-                </div>
-                <div className="p-3"></div>
-                <h5 className="heading mt-5">Exterior Detailing</h5>
-                <p className="text-color-2 my-4">
-                  Thorough cleaning, polishing, and waxing to restore your car’s shine and protect its paint.
-                </p>
-                <Link href="/service-detail" className="links-primary text-white">
-                  Read More
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-xl-3 pe-xl-4">
-              <div
-                className="service-box position-relative h-100"
-                data-aos="fade-up"
-                data-aos-delay="100"
-                data-aos-duration="800"
-              >
-                <div className="service-icon position-absolute">
-                  <i className="bi bi-arrow-right-short"></i>
-                </div>
-                <div className="p-3"></div>
-                <h5 className="heading mt-5">Interior Detailing</h5>
-                <p className="text-color-2 my-4">
-                  Deep cleaning of seats, carpets, dashboard, and all interior surfaces for a fresh, spotless cabin.
-                </p>
-                <Link href="/service-detail" className="links-primary text-white">
-                  Read More
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-xl-3 ps-xl-4">
-              <div
-                className="service-box position-relative h-100"
-                data-aos="fade-up"
-                data-aos-delay="500"
-                data-aos-duration="800"
-              >
-                <div className="service-icon position-absolute">
-                  <i className="bi bi-arrow-right-short"></i>
-                </div>
-                <div className="p-3"></div>
-                <h5 className="heading mt-5">Paint Correction</h5>
-                <p className="text-color-2 my-4">
-                  Removing swirl marks, scratches, and oxidation to bring back a flawless, mirror-like finish.
-                </p>
-                <Link href="/service-detail" className="links-primary text-white">
-                  Read More
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-xl-3">
-              <div
-                className="service-box top-right p-4 position-relative h-100"
-                data-aos="fade-left"
-                data-aos-delay="100"
-                data-aos-duration="800"
-              >
-                <div className="service-icon position-absolute">
-                  <i className="bi bi-arrow-right-short"></i>
-                </div>
-                <div className="p-3"></div>
-                <h5 className="heading mt-5">Ceramic Coating</h5>
-                <p className="text-color-2 my-4">
-                  Long-lasting protection against dirt, UV rays, and water spots while enhancing gloss.
-                </p>
-                <Link href="/service-detail" className="links-primary text-white">
-                  Read More
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* #service end */}
 
       {/* Warranty section */}
       <section className="section py-5 my-5">
@@ -224,14 +114,14 @@ export default function Home() {
                 className="col-12 col-xl-3 d-flex flex-column text-center text-xl-start mb-4 mb-xl-0"
                 style={{ minHeight: '100%' }}
               >
-                <h6 className="text-color-2">WHY CHOOSE US?</h6>
+                <h6 className="text-color-2">Why Choose Sunrise Detailing</h6>
                 <div className="mt-auto">
-                  <h1 className="count-up heading text-primary-color display-1" data-count="90">
+                  <h1 className="count-up heading text-primary-color display-1" data-count="95">
                     0%
                   </h1>
                   <p className="text-color-2 mt-0 mt-xl-4">
-                    <strong>Many have felt the pleasure</strong> of our service and many have<br />
-                    entrusted their vehicles to us
+                    <strong>95% of Our Clients Return for Regular Service</strong><br />
+                    Many have experienced the Sunrise Detailing difference, and they trust us to keep their vehicles looking their absolute best.
                   </p>
                 </div>
               </div>
@@ -239,8 +129,8 @@ export default function Home() {
               <div className="col-12 col-xl-9">
                 <div className="row text-center text-xl-start">
                   <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                    Unmatched Quality, Precision, And<br />
-                    <span className="text-primary-color">Care for Your Car</span>
+                    Excellence, Expertise, and <br />
+                    <span className="text-primary-color">Exceptional Care</span>
                   </h2>
                 </div>
                 <div className="row text-center text-xl-start mt-4">
@@ -259,35 +149,33 @@ export default function Home() {
                   <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
                     <h6 className="text-primary-color fw-medium">01</h6>
                     <hr className="hr-style-1 my-4 border-2" />
-                    <h5>Professional Expertise</h5>
+                    <h5>Certified Detailing Professionals</h5>
                     <p className="text-color-2 my-4">
-                      Our skilled detailers use top-quality products and techniques to ensure the best results for your
-                      vehicle.
+                      Our team is professionally trained and certified in advanced detailing techniques. We stay current with industry innovations to provide you with the highest quality service available.
                     </p>
                   </div>
                   <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                     <h6 className="text-primary-color fw-medium">02</h6>
                     <hr className="hr-style-1 my-4 border-2" />
-                    <h5>Premium Quality Products</h5>
+                    <h5>Premium Products & Equipment</h5>
                     <p className="text-color-2 my-4">
-                      We only use high-grade, eco-friendly detailing products that are safe for your car and the
-                      environment.
+                      We invest in the best so you get the best. From pH-balanced shampoos to professional-grade polishers and ceramic coatings, every product we use is chosen for performance and safety.
                     </p>
                   </div>
                   <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                     <h6 className="text-primary-color fw-medium">03</h6>
                     <hr className="hr-style-1 my-4 border-2" />
-                    <h5>Attention To Detail</h5>
+                    <h5>Meticulous Attention to Detail</h5>
                     <p className="text-color-2 my-4">
-                      We focus on every inch of your vehicle, delivering a flawless finish that exceeds expectations.
+                      We don't cut corners or rush through jobs. Every vehicle receives our complete focus, ensuring no spot is missed and every surface is treated with care and precision.
                     </p>
                   </div>
                   <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
                     <h6 className="text-primary-color fw-medium">04</h6>
                     <hr className="hr-style-1 my-4 border-2" />
-                    <h5>Customer Satisfaction Guaranteed</h5>
+                    <h5>Transparent & Fair Pricing</h5>
                     <p className="text-color-2 my-4">
-                      We prioritize your satisfaction, offering personalized service and outstanding results every time..
+                      No surprises, no hidden fees. We provide clear pricing, honest recommendations, and packages designed to fit different needs and budgets without compromising quality.
                     </p>
                   </div>
                 </div>
@@ -306,7 +194,7 @@ export default function Home() {
               {/* title */}
               <h6 className="text-color-2">HOW IT WORKS</h6>
               <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                Obtain Your Car's History In Just Three Easy Steps.
+                Get Your Car Detailed in Three Simple Steps
               </h2>
               <div className="mt-4">
                 <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
@@ -336,9 +224,7 @@ export default function Home() {
                   >
                     <div className="accordion-body ps-0 ps-xl-5">
                       <p className="ms-0 ms-xl-5">
-                        Choose the detailing service that best fits your needs and schedule an appointment at your
-                        convenience. You can book online, call us, or visit our location. We’ll confirm your booking and
-                        provide any necessary preparation details.
+                        Choose your preferred service package and schedule a convenient time online, by phone, or in person. We'll send you a confirmation with everything you need to know before your appointment.
                       </p>
                     </div>
                   </div>
@@ -353,7 +239,7 @@ export default function Home() {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      02. We Detail Your Car
+                      02. We Work Our Magic
                     </button>
                   </h2>
                   <div
@@ -364,9 +250,7 @@ export default function Home() {
                   >
                     <div className="accordion-body ps-0 ps-xl-5">
                       <p className="ms-0 ms-xl-5">
-                        Our professional detailers will carefully clean, restore, and protect your vehicle using
-                        high-quality products and advanced techniques. From deep interior cleaning to exterior polishing
-                        and paint protection, we ensure every inch of your car looks flawless.
+                        Drop off your vehicle and let our expert team get to work. Using professional techniques and premium products, we'll meticulously clean, restore, and protect every surface. Relax knowing your car is in skilled hands.
                       </p>
                     </div>
                   </div>
@@ -381,7 +265,7 @@ export default function Home() {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      03. Enjoy the Shine
+                      03. Drive Away Impressed
                     </button>
                   </h2>
                   <div
@@ -392,9 +276,7 @@ export default function Home() {
                   >
                     <div className="accordion-body ps-0 ps-xl-5">
                       <p className="ms-0 ms-xl-5">
-                        Once the detailing is complete, your car will be spotless, refreshed, and protected. Pick up
-                        your vehicle or enjoy our delivery service (if available), and drive away with confidence,
-                        knowing your car looks as good as new.
+                        Pick up your beautifully detailed vehicle and enjoy that incredible feeling of driving something that looks, feels, and smells brand new. We're confident you'll love the results – and we're here whenever you need us again.
                       </p>
                     </div>
                   </div>
@@ -456,157 +338,29 @@ export default function Home() {
         <div className="b-container position-relative z-1 my-5">
           <h6 className="text-color-2 text-center pt-4">CUSTOMER REVIEWS</h6>
           <h2 className="heading text-center mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-            Customer <span className="text-primary-color">Experiences</span> That<br />
-            Speak For Themselves
+            Hear From Our Satisfied Customers
           </h2>
 
-          <div className="row g-4 g-xl-5 my-5 pb-5">
-            {/* Testimonial Cards */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-              <div className="d-flex flex-column h-100 gap-4">
-                <div className="card p-4">
-                  <p>
-                    Absolutely incredible service! My car looks brand new inside and out. The attention to detail was
-                    phenomenal. I couldn’t be happier with the results. Highly recommend!
-                  </p>
-                  <div className="d-flex align-items-center mt-auto pt-3">
-                    <img
-                      src="/images/Place-Holder-64x64.jpg"
-                      alt="Raul Axios"
-                      className="rounded-circle me-3"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h5 className="mb-0">Raul Axios</h5>
-                      <small className="text-color-2">Auto Dealer</small>
-                    </div>
-                  </div>
-                </div>
 
-                <div className="card p-4">
-                  <p>
-                    I’ve used many car detailing services before, but this one exceeded my expectations. The team was
-                    professional, friendly, and did an amazing job on my vehicle. It looks flawless!
-                  </p>
-                  <div className="d-flex align-items-center mt-auto pt-3">
-                    <img
-                      src="/images/Place-Holder-64x64.jpg"
-                      alt="Ubeid Una"
-                      className="rounded-circle me-3"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h5 className="mb-0">Ubeid Una</h5>
-                      <small className="text-color-2">Car Owner</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-              <div className="d-flex flex-column h-100 gap-4">
-                <div className="card p-4">
-                  <p>
-                    I was blown away by the transformation! From the deep clean of the interior to the shiny, protected
-                    exterior, my car looks better than when I first bought it. Truly exceptional work!
-                  </p>
-                  <div className="d-flex align-items-center mt-4">
-                    <img
-                      src="/images/Place-Holder-64x64.jpg"
-                      alt="Taki Wanabe"
-                      className="rounded-circle me-3"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h5 className="mb-0">Taki Wanabe</h5>
-                      <small className="text-color-2">Vintage Car Owner</small>
-                    </div>
-                  </div>
-                </div>
-                <div className="card p-4">
-                  <p>
-                    The service here is outstanding. The team took extra care in detailing my car, and the results are
-                    nothing short of amazing. I will definitely return for regular maintenance!
-                  </p>
-                  <div className="d-flex align-items-center mt-auto pt-3">
-                    <img
-                      src="/images/Place-Holder-64x64.jpg"
-                      alt="Hafsha Jasmine"
-                      className="rounded-circle me-3"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h5 className="mb-0">Hafsha Jasmine</h5>
-                      <small className="text-color-2">Auto Dealer</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-xl-4" data-aos="fade-left" data-aos-delay="350" data-aos-duration="800">
-              <div className="d-flex flex-column h-100 gap-4">
-                <div className="card p-4">
-                  <p>
-                    This is the best detailing service I’ve ever had. My car looks immaculate, and it feels like I’m
-                    driving a completely different vehicle. I’ll be a loyal customer from now on!
-                  </p>
-                  <div className="d-flex align-items-center mt-auto pt-3">
-                    <img
-                      src="/images/Place-Holder-64x64.jpg"
-                      alt="Akio Mirfaq"
-                      className="rounded-circle me-3"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h5 className="mb-0">Akio Mirfaq</h5>
-                      <small className="text-color-2">Car Owner</small>
-                    </div>
-                  </div>
-                </div>
-                <div className="card p-4">
-                  <p>
-                    From the moment I walked in, I knew I was in good hands. The staff was knowledgeable and friendly,
-                    and they did an incredible job on my car. It’s spotless, inside and out!
-                  </p>
-                  <div className="d-flex align-items-center mt-auto pt-3">
-                    <img
-                      src="/images/Place-Holder-64x64.jpg"
-                      alt="Olivia Seamo"
-                      className="rounded-circle me-3"
-                      width="60"
-                      height="60"
-                    />
-                    <div>
-                      <h5 className="mb-0">Olivia Seamo</h5>
-                      <small className="text-color-2">Car Collector</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="mt-5 pb-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <TestimonialsCarousel />
           </div>
         </div>
       </section>
+
       {/* #testimonial end */}
 
       {/* Pricing Section */}
       <section className="section py-5 my-5">
         <div className="b-container">
-          <div className="row text-center text-lg-start">
-            <div className="col-12 col-xl-7">
-              <h6 className="text-color-2">PRICING PLAN</h6>
+          <div className="row text-center text-xl-start">
+            <div className="col-12 col-xl-6">
+              <h6 className="text-color-2">OUR SERVICES</h6>
               <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                Choose the Perfect Detailing Package for Your Car
+                Comprehensive Detailing Solutions Tailored to Your Needs
               </h2>
             </div>
-            <div className="col-12 col-xl-5 pt-4">
+            <div className="col-12 col-xl-6 pt-4">
               <p className="text-color-2">
                 Discover the ideal detailing package tailored to your car’s needs and condition. Whether you’re looking
                 for a quick refresh or a full restoration, our options are designed to deliver exceptional results and
@@ -615,148 +369,184 @@ export default function Home() {
             </div>
           </div>
           <div className="row g-4 mt-5">
-            {/* Basic plan */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-              <div className="card bg-secondary-color text-white rounded-4 p-4">
-                <div className="d-flex justify-content-between align-items-center">
-                  <h4 className="heading mb-0 py-0">Basic</h4>
-                  <span className="bg-accent-color text-color-2 rounded-2 py-2 px-3">Estimated Time: 1.5 – 2 Hours</span>
+            {/* Service 1: Exterior */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-car-front-fill text-black"></i>
+                  </div>
+                  <h4 className="heading">Exterior Detailing</h4>
+                  <p className="mt-3">
+                    Exterior Detailing is a deep-cleaning and correction process designed to restore shine, smoothness, and protection to your vehicle’s paint.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
-
-                <div className="heading">
-                  <h5 className="mt-4">Start With</h5>
-                  <h2 className="fw-bolder text-primary-color">$299,99</h2>
-                </div>
-
-                <p className="text-color-2 mt-4">Designed for regular maintenance, keeping your car clean and fresh.</p>
-                <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
-                  Choose This Plan
-                </Link>
-
-                <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
-                  <h4 className="heading">Feature :</h4>
-                  <ul className="list-unstyled text-color-2">
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Exterior hand wash & wax
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Interior vacum & dusting
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Windows cleaning (inside & out)
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Tire cleaning & shine
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Light interior wipe-down
-                    </li>
-                  </ul>
-                </div>
-
-                <p className="text-color-2 mt-4">
-                  <strong>Perfect for:</strong> Regular maintenance and keeping your car fresh.
-                </p>
               </div>
             </div>
-            {/* Premium plan */}
+
+            {/* Service 2: Interior */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-person-bounding-box text-black"></i>
+                  </div>
+                  <h4 className="heading">Interior Detailing</h4>
+                  <p className="mt-3">
+                    Interior Detailing restores cleanliness, comfort, and hygiene by deep-cleaning every interior surface.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 3: Ceramic Coating */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-gem text-black"></i>
+                  </div>
+                  <h4 className="heading">Ceramic Coating</h4>
+                  <p className="mt-3">
+                    Ceramic Coating creates a strong, semi-permanent protective layer that bonds with your vehicle’s paint, enhancing gloss while safeguarding the surface.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 4: PPF (Existing) */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-shield-check text-black"></i>
+                  </div>
+                  <h4 className="heading">Paint Protection Film</h4>
+                  <p className="mt-3">
+                    Shield your vehicle against rock chips, scratches, and road debris with our self-healing PPF invisible layer.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 5: Wraps */}
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-              <div className="card bg-secondary-color text-white rounded-4 p-4">
-                <div className="d-flex justify-content-between align-items-center">
-                  <h4>Premium</h4>
-                  <span className="bg-accent-color rounded-2 p-2">Estimated Time: 2 – 3 Hours</span>
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-palette text-black"></i>
+                  </div>
+                  <h4 className="heading">Premium Vehicle Wraps</h4>
+                  <p className="mt-3">
+                    Vehicle wraps allow you to change your car’s appearance while protecting the original paint underneath.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
-
-                <div className="heading">
-                  <h5 className="mt-4">Start With</h5>
-                  <h2 className="fw-bolder text-primary-color">$499,99</h2>
-                </div>
-
-                <p className="text-color-2 mt-4">
-                  A deep clean inside and out, perfect for cars needing extra attention.
-                </p>
-                <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
-                  Choose This Plan
-                </Link>
-
-                <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
-                  <h4 className="heading">Feature :</h4>
-                  <ul className="list-unstyled text-color-2">
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Everything in the Basic Plan
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Deep interior cleaning (seats &
-                      carpets)
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Clay bar treatment for paint
-                      smoothness
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Engine bay cleaning
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>High-quality polish & wax
-                    </li>
-                  </ul>
-                </div>
-
-                <p className="text-color-2 mt-4">
-                  <strong>Perfect for:</strong> A thorough clean with added protection for your vehicle.
-                </p>
               </div>
             </div>
-            {/* Ultimate plan */}
-            <div className="col-12 col-xl-4" data-aos="fade-left" data-aos-delay="350" data-aos-duration="800">
-              <div className="card bg-secondary-color text-white rounded-4 p-4">
-                <div className="d-flex justify-content-between align-items-center">
-                  <h4>Ultimate</h4>
-                  <span className="bg-accent-color rounded-2 p-2">Estimated Time: 4 – 7 Hours</span>
+
+            {/* Service 6: Rubbing & Polishing */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-stars text-black"></i>
+                  </div>
+                  <h4 className="heading">Rubbing & Polishing</h4>
+                  <p className="mt-3">
+                    Rubbing & Polishing is a paint correction process that removes surface imperfections and restores gloss.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
+              </div>
+            </div>
 
-                <div className="heading">
-                  <h5 className="mt-4">Start With</h5>
-                  <h2 className="fw-bolder text-primary-color">$999,99</h2>
+            {/* Service 7: Nano & Teflon */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-droplet-half text-black"></i>
+                  </div>
+                  <h4 className="heading">Nano & Teflon Coating</h4>
+                  <p className="mt-3">
+                    Nano and Teflon coatings provide a protective layer that enhances shine while offering basic resistance against dust, water spots, and UV rays.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
+              </div>
+            </div>
 
-                <p className="text-color-2 mt-4">
-                  Perfect clean like a new car, service for cars needing more extra attention.
-                </p>
-                <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
-                  Choose This Plan
-                </Link>
-
-                <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
-                  <h4 className="heading">Feature :</h4>
-                  <ul className="list-unstyled text-color-2">
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Everything in the Premium Plan
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Paint correction (removes swirl
-                      marks & scratches)
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Ceramic coating for long-term
-                      protection
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Leather conditioning & treatment
-                    </li>
-                    <li className="mt-3">
-                      <i className="bi bi-check-square-fill text-primary-color me-2"></i>Headlight restoration
-                    </li>
-                  </ul>
+            {/* Service 8: Glass Coating */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-eyeglasses text-black"></i>
+                  </div>
+                  <h4 className="heading">Glass Coating</h4>
+                  <p className="mt-3">
+                    Glass Coating creates a water-repellent layer that keeps your windshield and windows clean and clear.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
-
-                <p className="text-color-2 mt-4">
-                  <strong>Perfect for:</strong> Maximum protection and restoring your car’s showroom shine.
-                </p>
               </div>
             </div>
           </div>
         </div>
+
       </section>
       {/* #pricing end */}
 
@@ -993,7 +783,7 @@ export default function Home() {
       {/* #faqs end */}
 
       {/* Blog Section */}
-      <section className="section py-5 my-5">
+      {/* <section className="section py-5 my-5">
         <div className="b-container">
           <h6 className="text-color-2 text-center pt-4">BLOGS & ARTICLES</h6>
           <h2 className="heading text-center mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="3000">
@@ -1085,8 +875,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* #end blogs */}
-    </main>
+    </main >
   );
 }

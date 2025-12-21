@@ -51,7 +51,7 @@ export default function ContactUs() {
                                     </div>
                                     <h5 className="heading mt-3">Workshop Address</h5>
                                     <p className="text-color-2 fs-5 mt-3 mb-0">
-                                        <em>123 Serenity Lane, Blissfield, CA 90210, United States</em>
+                                        <em>[Your Physical Address]</em>
                                     </p>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ export default function ContactUs() {
                                     </div>
                                     <h5 className="heading mt-3">Call Us Anytime</h5>
                                     <p className="text-color-2 fs-5 mt-3 mb-0">
-                                        <em>(555) 123-4567 ( First Contact) or +1 555-789-1234 (2nd Contact)</em>
+                                        <em>[Your Phone Number]</em>
                                     </p>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@ export default function ContactUs() {
                                     </div>
                                     <h5 className="heading mt-3">Send Us Email</h5>
                                     <p className="text-color-2 fs-5 mt-3 mb-0">
-                                        <em>Info@Yourmail.com</em>
+                                        <em>info@sunrisedetailing.com</em>
                                     </p>
                                 </div>
                             </div>
@@ -228,13 +228,13 @@ export default function ContactUs() {
                         </div>
                         <div className="col order-1">
                             <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                                <span className="text-primary-color">Let’s Talk!</span> Your Car Deserves the Best Care
+                                <span className="text-primary-color">Get in Touch</span> with Sunrise Detailing
                             </h2>
                             <p className="text-color-2 mt-3">
-                                Have a question about our car detailing services? Need expert advice on how to keep your vehicle looking
-                                its best? We’re here to assist you! Whether you want to book an appointment, get a quote, or simply learn
-                                more about our services, don’t hesitate to reach out.
+                                Have questions? Ready to book? We're here to help make your car look amazing.
                             </p>
+                            <h5 className="heading mt-4">Business Hours</h5>
+                            <p className="text-color-2 mt-2">Monday – sunday: 8:00 AM – 8:00 PM</p>
                             <h4 className="heading mt-4">Why Should Reach Us Out ?</h4>
                             <p className="text-color-2 mt-3">
                                 Our professional car detailing and maintenance services help elevate your driving comfort, vehicle
@@ -258,7 +258,7 @@ export default function ContactUs() {
                                 </li>
                             </ul>
                             <div className="social-box flex-row w-100 mt-5">
-                                <h5 className="heading align-content-center">Follow Our Social Media : </h5>
+                                <h5 className="heading align-content-center">Follow us on social media for detailing tips, before & after transformations, and special promotions!</h5>
                                 <Link href="http://www.facebook.com" className="rounded-2" style={{ width: '40px', height: '40px' }}>
                                     <i className="bi bi-facebook fs-5"></i>
                                 </Link>

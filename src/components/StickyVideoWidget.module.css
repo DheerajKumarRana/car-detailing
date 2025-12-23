@@ -124,17 +124,18 @@
 
 @media (max-width: 576px) {
     .widgetContainer {
-        width: 140px;
-        bottom: 20px;
-        right: 20px;
+        width: 110px;
+        bottom: 80px;
+        /* Moved up slightly to avoid bottom navigation bar overlap if any */
+        right: 15px;
     }
 
     .videoWrapper {
-        height: 180px;
+        height: 150px;
     }
 
     .bookButton {
-        font-size: 0.75rem;
-        padding: 6px 12px;
+        font-size: 0.65rem;
+        padding: 5px 10px;
     }
 }

@@ -6,9 +6,10 @@ export default function Home() {
   return (
     <main>
       {/* Hero section */}
+      {/* Hero section */}
       <section
         className="section hero position-relative bg-size-cover bg-position-center bg-repeat-no-repeat py-5"
-        style={{ backgroundImage: "url('/images/test-banner.jpg')", backgroundSize: 'contain', backgroundPosition: 'top center', backgroundColor: '#000' }}
+        style={{ backgroundImage: "url('/images/test-banner.jpg')", backgroundColor: '#000' }}
       >
         <div className="bg-overlay"></div>
         <div className="b-container h-100 position-relative z-2">
@@ -37,17 +38,17 @@ export default function Home() {
       {/* Feature Section */}
       <section className="feature position-relative">
         <div className="b-container">
-          <div className="row d-flex justify-content-end align-items-end feature-box-wrapper g-0 mx-4">
-            <div className="col-12 col-md-6 col-xl-3 p-0">
-              <div className="feature-box w-100 rounded-start-4" style={{ backgroundColor: '#303030' }}>
+          <div className="row d-flex justify-content-end align-items-end feature-box-wrapper g-3 g-xl-0 mx-xl-4 mx-0">
+            <div className="col-12 col-md-6 col-xl-3 p-0 mb-3 mb-xl-0">
+              <div className="feature-box w-100 rounded-4 rounded-xl-end-0 rounded-xl-start-4" style={{ backgroundColor: '#303030' }}>
                 <h5 className="feature-title">Certified Detailing Experts</h5>
                 <p>
                   Our team of certified professionals uses industry-leading techniques and premium products to ensure your vehicle receives showroom-quality treatment every time.
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-xl-3 p-0">
-              <div className="feature-box w-100" style={{ backgroundColor: '#3F3F3F' }}>
+            <div className="col-12 col-md-6 col-xl-3 p-0 mb-3 mb-xl-0">
+              <div className="feature-box w-100 rounded-4 rounded-xl-0" style={{ backgroundColor: '#3F3F3F' }}>
                 <h5 className="feature-title">Eco-Conscious Care</h5>
                 <p>
                   We believe in protecting your car and the planet. Our eco-friendly products deliver outstanding results while minimizing environmental impact.
@@ -55,7 +56,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-12 col-xl-3 p-0">
-              <div className="feature-box w-100 rounded-end-4" style={{ backgroundColor: '#4F4F4F' }}>
+              <div className="feature-box w-100 rounded-4 rounded-xl-start-0 rounded-xl-end-4" style={{ backgroundColor: '#4F4F4F' }}>
                 <h5 className="feature-title">100% Satisfaction Promise</h5>
                 <p>
                   Your satisfaction is our priority. If you're not completely happy with our service, we'll make it right – guaranteed.

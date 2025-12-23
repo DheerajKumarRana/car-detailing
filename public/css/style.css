@@ -109,7 +109,7 @@ img {
 /* Typography                   */
 /* ---------------------------- */
 h1 {
-  font-size: 72px;
+  font-size: 60px;
 }
 
 h2 {
@@ -395,7 +395,7 @@ a {
 }
 
 .hero-content {
-  padding-top: 23vh;
+  padding-top: 22vh;
 }
 
 .feature {
@@ -680,7 +680,7 @@ a {
   }
 
   h1 {
-    font-size: 64px;
+    font-size: 52px;
   }
 
   h2 {
@@ -750,7 +750,7 @@ a {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 42px;
   }
 
   h2 {
@@ -775,6 +775,11 @@ a {
   .dropdown-item {
     margin: 10px 0;
   }
+
+  .feature {
+    margin-top: -60px;
+    /* Reduced negative margin for tablets */
+  }
 }
 
 @media only screen and (max-width: 768.98px) {
@@ -783,7 +788,7 @@ a {
   }
 
   h1 {
-    font-size: 48px;
+    font-size: 34px;
   }
 
   h2 {
@@ -796,6 +801,15 @@ a {
 
   h4 {
     font-size: 20px;
+  }
+
+  .hero-content {
+    padding-top: 15vh;
+  }
+
+  .feature {
+    margin-top: -40px;
+    /* Minimal negative margin for mobile */
   }
 
   h5 {

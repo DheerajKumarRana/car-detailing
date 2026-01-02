@@ -56,43 +56,49 @@ export default function Pricing() {
                         <div className="col-12 col-md-6 col-xl-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
                             <div className="card bg-secondary-color text-white rounded-4 p-4">
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <h4 className="heading mb-0 py-0">Basic</h4>
-                                    <span className="bg-accent-color text-color-2 rounded-2 py-2 px-3">Estimated Time: 1.5 – 2 Hours</span>
+                                    <h3 >PPF</h3>
+                                    {/* <span className="bg-accent-color text-color-2 rounded-2 py-2 px-3">Estimated Time: 1.5 – 2 Hours</span> */}
                                 </div>
 
                                 <div className="heading">
                                     <h5 className="mt-4">Start With</h5>
-                                    <h2 className="fw-bolder text-primary-color">$299,99</h2>
+                                    <h4 className="fw-bolder text-primary-color">Rs. 29,000 - 90,000</h4>
                                 </div>
 
-                                <p className="text-color-2 mt-4">Designed for regular maintenance, keeping your car clean and fresh.</p>
+                                {/* <p className="text-color-2 mt-4">Designed for regular maintenance, keeping your car clean and fresh.</p> */}
                                 <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
                                     Choose This Plan
                                 </Link>
 
                                 <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
-                                    <h4 className="heading">Feature :</h4>
+                                    <h4 className="heading">Brands:</h4>
                                     <ul className="list-unstyled text-color-2">
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Exterior hand wash & wax
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Luminar
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Interior vacum & dusting
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>CeraWare
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Windows cleaning (inside & out)
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>NAR
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Tire cleaning & shine
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>USA
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Light interior wipe-down
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Boss PPF
+                                        </li>
+                                        <li className="mt-3">
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>X-PRO
+                                        </li>
+                                        <li className="mt-3">
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Other
                                         </li>
                                     </ul>
                                 </div>
 
                                 <p className="text-color-2 mt-4">
-                                    <strong>Perfect for:</strong> Regular maintenance and keeping your car fresh.
+                                    <strong>Uses:</strong> Vehicle wraps allow you to change your car’s appearance while protecting the original paint underneath. Wraps are fully removable and customizable.
                                 </p>
                             </div>
                         </div>
@@ -100,45 +106,50 @@ export default function Pricing() {
                         <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
                             <div className="card bg-secondary-color text-white rounded-4 p-4">
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <h4>Premium</h4>
-                                    <span className="bg-accent-color rounded-2 p-2">Estimated Time: 2 – 3 Hours</span>
+                                    <h3>Ceramic Coating</h3>
+                                    {/* <span className="bg-accent-color rounded-2 p-2">Estimated Time: 2 – 3 Hours</span> */}
                                 </div>
 
                                 <div className="heading">
                                     <h5 className="mt-4">Start With</h5>
-                                    <h2 className="fw-bolder text-primary-color">$499,99</h2>
+                                    <h4 className="fw-bolder text-primary-color">Rs.6,999 - 30,000</h4>
                                 </div>
 
-                                <p className="text-color-2 mt-4">A deep clean inside and out, perfect for cars needing extra attention.</p>
+                                {/* <p className="text-color-2 mt-4">A deep clean inside and out, perfect for cars needing extra attention.</p> */}
                                 <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
                                     Choose This Plan
                                 </Link>
 
                                 <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
-                                    <h4 className="heading">Feature :</h4>
+                                    <h4 className="heading">Brands :</h4>
                                     <ul className="list-unstyled text-color-2">
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Everything in the Basic Plan
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Graphine
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Deep interior cleaning (seats &
-                                            carpets)
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>3M
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Clay bar treatment for paint
-                                            smoothness
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Meguar
+
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Engine bay cleaning
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Mahindra
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>High-quality polish & wax
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>9H
+                                        </li><li className="mt-3">
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>10H
+                                        </li><li className="mt-3">
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>12 PRO
+                                        </li><li className="mt-3">
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>3D Ceramic Coating
                                         </li>
                                     </ul>
                                 </div>
 
                                 <p className="text-color-2 mt-4">
-                                    <strong>Perfect for:</strong> A thorough clean with added protection for your vehicle.
+                                    <strong>Uses:</strong> “Cars face sun, pollution, dust, rain and bird droppings daily, dulling paint. Ceramic Coating adds a strong protective layer, boosting gloss and preventing oxidation.”
                                 </p>
                             </div>
                         </div>
@@ -146,48 +157,49 @@ export default function Pricing() {
                         <div className="col-12 col-xl-4" data-aos="fade-left" data-aos-delay="350" data-aos-duration="800">
                             <div className="card bg-secondary-color text-white rounded-4 p-4">
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <h4>Ultimate</h4>
-                                    <span className="bg-accent-color rounded-2 p-2">Estimated Time: 4 – 7 Hours</span>
+                                    <h3>Wrap</h3>
+                                    {/* <span className="bg-accent-color rounded-2 p-2">Estimated Time: 4 – 7 Hours</span> */}
                                 </div>
 
                                 <div className="heading">
                                     <h5 className="mt-4">Start With</h5>
-                                    <h2 className="fw-bolder text-primary-color">$999,99</h2>
+                                    <h4 className="fw-bolder text-primary-color">Rs.24,999- 90,000</h4>
                                 </div>
 
-                                <p className="text-color-2 mt-4">
+                                {/* <p className="text-color-2 mt-4">
                                     Perfect clean like a new car, service for cars needing more extra attention.
-                                </p>
+                                </p> */}
                                 <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
                                     Choose This Plan
                                 </Link>
 
                                 <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
-                                    <h4 className="heading">Feature :</h4>
+                                    <h4 className="heading">Colors:</h4>
                                     <ul className="list-unstyled text-color-2">
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Everything in the Premium Plan
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Red Black
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Paint correction (removes swirl
-                                            marks & scratches)
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Red
+
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Ceramic coating for long-term
-                                            protection
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Yellow
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Leather conditioning &
-                                            treatment
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>White
                                         </li>
                                         <li className="mt-3">
-                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Headlight restoration
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Grey
+                                        </li>
+                                        <li className="mt-3">
+                                            <i className="bi bi-check-square-fill text-primary-color me-2"></i>Others
                                         </li>
                                     </ul>
                                 </div>
 
                                 <p className="text-color-2 mt-4">
-                                    <strong>Perfect for:</strong> Maximum protection and restoring your car’s showroom shine.
+                                    <strong>Uses:</strong> Vehicle wraps allow you to change your car’s appearance while protecting the original paint underneath. Wraps are fully removable and customizable.
                                 </p>
                             </div>
                         </div>

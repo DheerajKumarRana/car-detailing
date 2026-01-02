@@ -8,47 +8,18 @@ interface AppointmentModalProps {
     onClose: () => void;
 }
 
-type CarType = 'sedan' | 'suv' | 'truck' | 'van' | 'luxury';
+type CarType = 'sedan' | 'suv' | 'hatchback';
 
-const carBrands: Record<CarType, string[]> = {
-    sedan: [
-        "Maruti Suzuki", "Tata Motors", "Hyundai", "Honda", "Toyota", "Skoda", "Volkswagen",
-        "Renault", "Nissan", "Kia", "MG Motor", "Citroën", "Fiat", "Ford", "Chevrolet",
-        "Opel", "Hindustan Motors", "Premier Automobiles", "BYD", "Suzuki"
-    ].sort(),
-    suv: [
-        "Mahindra", "Tata Motors", "Maruti Suzuki", "Toyota", "Hyundai", "Kia", "Jeep",
-        "MG Motor", "Skoda", "Volkswagen", "Renault", "Nissan", "Honda", "Citroën",
-        "Isuzu", "Force Motors", "Ford", "BYD", "Lexus", "Land Rover", "Volvo", "Suzuki"
-    ].sort(),
-    truck: [
-        "Ashok Leyland", "Tata Motors", "Mahindra", "Eicher", "BharatBenz", "Volvo Trucks",
-        "Scania", "Force Motors", "Isuzu", "SML Isuzu", "AMW"
-    ].sort(),
-    van: [
-        "Maruti Suzuki", "Force Motors", "Tata Motors", "Mahindra", "Toyota", "Nissan",
-        "Renault", "Mercedes-Benz"
-    ].sort(),
-    luxury: [
-        "Mercedes-Benz", "BMW", "Audi", "Volvo", "Jaguar", "Land Rover", "Porsche",
-        "Lexus", "Mini", "Rolls-Royce", "Lamborghini", "Ferrari", "Bentley",
-        "Aston Martin", "Maserati", "Bugatti", "McLaren", "Tesla"
-    ].sort()
-};
+
 
 export default function AppointmentModal({ show, onClose }: AppointmentModalProps) {
     const [selectedCarType, setSelectedCarType] = useState<CarType | ''>('');
-    const [selectedBrand, setSelectedBrand] = useState<string>('');
-    const [brandSearch, setBrandSearch] = useState<string>('');
-    const [showBrandDropdown, setShowBrandDropdown] = useState<boolean>(false);
 
     // Reset function for when modal closes
     useEffect(() => {
         if (!show) {
             // Optional: reset fields on close
-            // setSelectedCarType('');
-            // setSelectedBrand('');
-            // setBrandSearch('');
+            setSelectedCarType('');
         }
     }, [show]);
 
@@ -57,22 +28,7 @@ export default function AppointmentModal({ show, onClose }: AppointmentModalProp
     const handleCarTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         const type = e.target.value as CarType;
         setSelectedCarType(type);
-        setSelectedBrand('');
-        setBrandSearch('');
     };
-
-    const handleBrandSelect = (brand: string) => {
-        setSelectedBrand(brand);
-        setBrandSearch(brand);
-        setShowBrandDropdown(false);
-    };
-
-    // Filter brands
-    const filteredBrands = selectedCarType
-        ? carBrands[selectedCarType].filter(brand =>
-            brand.toLowerCase().includes(brandSearch.toLowerCase())
-        )
-        : [];
 
     return (
         <div className={`modal fade show d-block ${styles.modalOverlay}`} tabIndex={-1} role="dialog">
@@ -140,7 +96,8 @@ export default function AppointmentModal({ show, onClose }: AppointmentModalProp
                                                 <option value="interior">Interior Detailing</option>
                                                 <option value="full">Full Car Detailing</option>
                                                 <option value="coating">Ceramic Coating</option>
-                                                <option value="paint">Paint Correction</option>
+                                                <option value="ppf">PPF</option>
+                                                <option value="wrap">Wrap</option>
                                             </select>
                                         </div>
                                     </div>
@@ -161,54 +118,26 @@ export default function AppointmentModal({ show, onClose }: AppointmentModalProp
                                             >
                                                 <option value="" disabled>Select Car Type</option>
                                                 <option value="sedan">Sedan</option>
-                                                <option value="suv">SUV / Crossover</option>
-                                                <option value="truck">Truck / Pickup</option>
-                                                <option value="van">Van / Minivan</option>
-                                                <option value="luxury">Luxury / Sports Car</option>
+                                                <option value="suv">SUV</option>
+                                                <option value="hatchback">Hatchback</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
 
-                                {/* Car Brand (Searchable Dropdown) */}
+                                {/* Car Brand (Simple Text Input) */}
                                 <div className="col-12">
                                     <div className={styles.formGroup}>
-                                        <label htmlFor="carBrand" className={styles.label}>Car Brand</label>
-                                        <div className={`${styles.inputGroup} ${styles.dropdownContainer}`}>
+                                        <label htmlFor="carBrand" className={styles.label}>Car Name/Brand</label>
+                                        <div className={styles.inputGroup}>
                                             <i className={`bi bi-search ${styles.inputIcon}`}></i>
                                             <input
                                                 type="text"
                                                 className={styles.input}
                                                 id="carBrand"
-                                                placeholder={selectedCarType ? "Search or select brand..." : "Please select a Car Type first"}
-                                                disabled={!selectedCarType}
-                                                value={brandSearch}
-                                                onChange={(e) => {
-                                                    setBrandSearch(e.target.value);
-                                                    setShowBrandDropdown(true);
-                                                    if (e.target.value === '') setSelectedBrand('');
-                                                }}
-                                                onFocus={() => setShowBrandDropdown(true)}
-                                                // Blur handling needs care to not close before click
-                                                onBlur={() => setTimeout(() => setShowBrandDropdown(false), 200)}
-                                                autoComplete="off"
+                                                placeholder="e.g. Toyota Corolla, Honda City"
                                                 required
                                             />
-
-                                            {/* Dropdown List */}
-                                            {showBrandDropdown && selectedCarType && filteredBrands.length > 0 && (
-                                                <div className={styles.dropdownList}>
-                                                    {filteredBrands.map((brand, index) => (
-                                                        <div
-                                                            key={index}
-                                                            className={styles.dropdownItem}
-                                                            onClick={() => handleBrandSelect(brand)}
-                                                        >
-                                                            {brand}
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            )}
                                         </div>
                                     </div>
                                 </div>

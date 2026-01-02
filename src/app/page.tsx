@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
+import HeroSlider from '../components/HeroSlider';
 import Image from 'next/image';
 
 export default function Home() {
@@ -7,11 +8,8 @@ export default function Home() {
     <main>
       {/* Hero section */}
       {/* Hero section */}
-      <section
-        className="section hero position-relative bg-size-cover bg-position-center bg-repeat-no-repeat py-5"
-        style={{ backgroundImage: "url('/images/test-banner.jpg')", backgroundColor: '#000' }}
-      >
-        <div className="bg-overlay"></div>
+      {/* Hero section */}
+      <HeroSlider>
         <div className="b-container h-100 position-relative z-2">
           <div className="row">
             <div
@@ -32,7 +30,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </HeroSlider>
+      {/* #hero end */}
       {/* #hero end */}
 
       {/* Feature Section */}
@@ -68,41 +67,204 @@ export default function Home() {
       </section>
       {/* #feature end */}
 
-      {/* About Section */}
-      <section className="section py-5 mt-5">
+      {/* Pricing Section */}
+      <section className="section py-5 my-5">
         <div className="b-container">
-          <div className="row justify-content-between">
-            <div className="col-12 col-xl-2 text-center text-xl-start mb-4 mb-xl-0">
-              <h6 className="text-color-2">ABOUT US</h6>
+          <div className="row text-center text-xl-start">
+            <div className="col-12 col-xl-6">
+              <h6 className="text-color-2">OUR SERVICES</h6>
+              <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+                Comprehensive Detailing Solutions Tailored to Your Needs
+              </h2>
             </div>
-            <div className="col-12 col-xl-10 text-center text-lg-start">
-              <div className="row">
-                <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                  Our Commitment to Providing Premium Car Detailing Services That
-                  <span className="text-primary-color">
-                    Bring Out the Best in Your Vehicle, Ensuring a Showroom Shine Every Time
-                  </span>
-                </h2>
-              </div>
-              <div className="row">
-                <div className="col-12 col-xl-3 order-2 order-xl-1">
-                  <hr className="hr-style-1 mb-4 border-2" />
-                </div>
-                <div className="col-12 col-xl-9 order-1 order-xl-2">
-                  <p className="text-color-2 mt-5">
-                    We are committed to delivering premium car detailing services that bring out the very best in your
-                    vehicle. With meticulous attention to every detail, we ensure your car is cleaned, restored, and
-                    maintained to the highest standards. Our goal is not just to make your car look clean, but to give
-                    it a showroom-quality shine that turns heads. Every service is backed by professional techniques and
-                    top-grade products to ensure long-lasting, impressive results.
+            <div className="col-12 col-xl-6 pt-4">
+              <p className="text-color-2">
+                Discover the ideal detailing package tailored to your car’s needs and condition. Whether you’re looking
+                for a quick refresh or a full restoration, our options are designed to deliver exceptional results and
+                long-lasting protection. Let your vehicle shine with the care it truly deserves.
+              </p>
+            </div>
+          </div>
+          <div className="row g-4 mt-5">
+            {/* Service 1: Exterior */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-car-front-fill text-black"></i>
+                  </div>
+                  <h4 className="heading">Exterior Detailing</h4>
+                  <p className="mt-3">
+                    Exterior Detailing is a deep-cleaning and correction process designed to restore shine, smoothness, and protection to your vehicle’s paint.
                   </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 2: Interior */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-person-bounding-box text-black"></i>
+                  </div>
+                  <h4 className="heading">Interior Detailing</h4>
+                  <p className="mt-3">
+                    Interior Detailing restores cleanliness, comfort, and hygiene by deep-cleaning every interior surface.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 3: Ceramic Coating */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-gem text-black"></i>
+                  </div>
+                  <h4 className="heading">Ceramic Coating</h4>
+                  <p className="mt-3">
+                    Ceramic Coating creates a strong, semi-permanent protective layer that bonds with your vehicle’s paint, enhancing gloss while safeguarding the surface.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 4: PPF (Existing) */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-shield-check text-black"></i>
+                  </div>
+                  <h4 className="heading">Paint Protection Film</h4>
+                  <p className="mt-3">
+                    Shield your vehicle against rock chips, scratches, and road debris with our self-healing PPF invisible layer.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 5: Wraps */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-palette text-black"></i>
+                  </div>
+                  <h4 className="heading">Premium Vehicle Wraps</h4>
+                  <p className="mt-3">
+                    Vehicle wraps allow you to change your car’s appearance while protecting the original paint underneath.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 6: Rubbing & Polishing */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-stars text-black"></i>
+                  </div>
+                  <h4 className="heading">Rubbing & Polishing</h4>
+                  <p className="mt-3">
+                    Rubbing & Polishing is a paint correction process that removes surface imperfections and restores gloss.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 7: Nano & Teflon */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-droplet-half text-black"></i>
+                  </div>
+                  <h4 className="heading">Nano & Teflon Coating</h4>
+                  <p className="mt-3">
+                    Nano and Teflon coatings provide a protective layer that enhances shine while offering basic resistance against dust, water spots, and UV rays.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Service 8: Glass Coating */}
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+              <div
+                className="service-box w-100 p-4 rounded-4 position-relative"
+                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+              >
+                <div className="bg-overlay rounded-4 opacity-50"></div>
+                <div className="position-relative z-1 text-white">
+                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
+                    <i className="bi bi-eyeglasses text-black"></i>
+                  </div>
+                  <h4 className="heading">Glass Coating</h4>
+                  <p className="mt-3">
+                    Glass Coating creates a water-repellent layer that keeps your windshield and windows clean and clear.
+                  </p>
+                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
+                    Read More <i className="bi bi-arrow-right"></i>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </section>
-      {/* #about end */}
 
 
 
@@ -351,204 +513,43 @@ export default function Home() {
 
       {/* #testimonial end */}
 
-      {/* Pricing Section */}
-      <section className="section py-5 my-5">
+
+      {/* About Section */}
+      <section className="section py-5 mt-5">
         <div className="b-container">
-          <div className="row text-center text-xl-start">
-            <div className="col-12 col-xl-6">
-              <h6 className="text-color-2">OUR SERVICES</h6>
-              <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
-                Comprehensive Detailing Solutions Tailored to Your Needs
-              </h2>
+          <div className="row justify-content-between">
+            <div className="col-12 col-xl-2 text-center text-xl-start mb-4 mb-xl-0">
+              <h6 className="text-color-2">ABOUT US</h6>
             </div>
-            <div className="col-12 col-xl-6 pt-4">
-              <p className="text-color-2">
-                Discover the ideal detailing package tailored to your car’s needs and condition. Whether you’re looking
-                for a quick refresh or a full restoration, our options are designed to deliver exceptional results and
-                long-lasting protection. Let your vehicle shine with the care it truly deserves.
-              </p>
-            </div>
-          </div>
-          <div className="row g-4 mt-5">
-            {/* Service 1: Exterior */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-car-front-fill text-black"></i>
-                  </div>
-                  <h4 className="heading">Exterior Detailing</h4>
-                  <p className="mt-3">
-                    Exterior Detailing is a deep-cleaning and correction process designed to restore shine, smoothness, and protection to your vehicle’s paint.
-                  </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
+            <div className="col-12 col-xl-10 text-center text-lg-start">
+              <div className="row">
+                <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+                  Our Commitment to Providing Premium Car Detailing Services That
+                  <span className="text-primary-color">
+                    Bring Out the Best in Your Vehicle, Ensuring a Showroom Shine Every Time
+                  </span>
+                </h2>
               </div>
-            </div>
-
-            {/* Service 2: Interior */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-person-bounding-box text-black"></i>
-                  </div>
-                  <h4 className="heading">Interior Detailing</h4>
-                  <p className="mt-3">
-                    Interior Detailing restores cleanliness, comfort, and hygiene by deep-cleaning every interior surface.
-                  </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
+              <div className="row">
+                <div className="col-12 col-xl-3 order-2 order-xl-1">
+                  <hr className="hr-style-1 mb-4 border-2" />
                 </div>
-              </div>
-            </div>
-
-            {/* Service 3: Ceramic Coating */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-gem text-black"></i>
-                  </div>
-                  <h4 className="heading">Ceramic Coating</h4>
-                  <p className="mt-3">
-                    Ceramic Coating creates a strong, semi-permanent protective layer that bonds with your vehicle’s paint, enhancing gloss while safeguarding the surface.
+                <div className="col-12 col-xl-9 order-1 order-xl-2">
+                  <p className="text-color-2 mt-5">
+                    We are committed to delivering premium car detailing services that bring out the very best in your
+                    vehicle. With meticulous attention to every detail, we ensure your car is cleaned, restored, and
+                    maintained to the highest standards. Our goal is not just to make your car look clean, but to give
+                    it a showroom-quality shine that turns heads. Every service is backed by professional techniques and
+                    top-grade products to ensure long-lasting, impressive results.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 4: PPF (Existing) */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-shield-check text-black"></i>
-                  </div>
-                  <h4 className="heading">Paint Protection Film</h4>
-                  <p className="mt-3">
-                    Shield your vehicle against rock chips, scratches, and road debris with our self-healing PPF invisible layer.
-                  </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 5: Wraps */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-palette text-black"></i>
-                  </div>
-                  <h4 className="heading">Premium Vehicle Wraps</h4>
-                  <p className="mt-3">
-                    Vehicle wraps allow you to change your car’s appearance while protecting the original paint underneath.
-                  </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 6: Rubbing & Polishing */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-stars text-black"></i>
-                  </div>
-                  <h4 className="heading">Rubbing & Polishing</h4>
-                  <p className="mt-3">
-                    Rubbing & Polishing is a paint correction process that removes surface imperfections and restores gloss.
-                  </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 7: Nano & Teflon */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-droplet-half text-black"></i>
-                  </div>
-                  <h4 className="heading">Nano & Teflon Coating</h4>
-                  <p className="mt-3">
-                    Nano and Teflon coatings provide a protective layer that enhances shine while offering basic resistance against dust, water spots, and UV rays.
-                  </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 8: Glass Coating */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
-              <div
-                className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
-              >
-                <div className="bg-overlay rounded-4 opacity-50"></div>
-                <div className="position-relative z-1 text-white">
-                  <div className="service-icon d-flex justify-content-center align-items-center rounded-2 bg-primary-color text-white fs-2 mb-4">
-                    <i className="bi bi-eyeglasses text-black"></i>
-                  </div>
-                  <h4 className="heading">Glass Coating</h4>
-                  <p className="mt-3">
-                    Glass Coating creates a water-repellent layer that keeps your windshield and windows clean and clear.
-                  </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
-                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </section>
+      {/* #about end */}
+
       {/* #pricing end */}
 
       {/* CTA Section */}

@@ -13,9 +13,7 @@ export default function Footer() {
                             Providing Premium Car Detailing Services That Bring Out the Best in Your Vehicle, Ensuring a Showroom
                             Shine Every Time.
                         </p>
-                        <Link href="/contact-us" className="btn btn-lg btn-cta-secondary d-block mt-4">
-                            Contact Us <i className="bi bi-arrow-right-short"></i>
-                        </Link>
+
                     </div>
 
                     <div className="col-12 col-md-6 col-xl-4 px-3 px-xl-5 mt-5 mt-xl-0">
@@ -42,11 +40,7 @@ export default function Footer() {
                                     FAQs
                                 </Link>
                             </li>
-                            <li className="mt-3">
-                                <Link className="text-color-2 links-primary" href="/contact-us">
-                                    Contact Us
-                                </Link>
-                            </li>
+
                         </ul>
                     </div>
 

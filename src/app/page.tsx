@@ -1,10 +1,15 @@
+"use client";
+
 import Link from 'next/link';
+import { useState } from 'react';
+import AppointmentModal from '../components/AppointmentModal';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
 import HeroSlider from '../components/HeroSlider';
 import Image from 'next/image';
 import BookingFormSection from '../components/BookingFormSection';
 
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <main>
       {/* Hero section */}
@@ -364,9 +369,9 @@ export default function Home() {
                 Get Your Car Detailed in Three Simple Steps
               </h2>
               <div className="mt-4">
-                <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                   Let's Get In Touch
-                </Link>
+                </button>
               </div>
               {/* #title end */}
               <div className="accordion mt-5" id="accordionExample">
@@ -574,13 +579,16 @@ export default function Home() {
             <h4 className="fw-semibold">
               Book Your Detailing Today! And Get <span className="text-primary-color">30% Cut Off</span>
             </h4>
-            <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+            <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
               Booking Now
-            </Link>
+            </button>
           </div>
         </div>
       </section>
+
       {/* #cta end */}
+
+      <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
 
       {/* FAQs Section */}
       <section className="section py-5 my-5">

@@ -53,8 +53,8 @@ export default function Services() {
                         <div className="row g-4 align-items-center" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
-                                        <img src="/images/services-wide.png" alt="Exterior Detailing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                    <div className="img-ratio-portrait">
+                                        <img src="/images/services/exterior-detailing.jpg" alt="Exterior Detailing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -91,8 +91,8 @@ export default function Services() {
                         <div className="row g-4 align-items-center flex-xl-row-reverse" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
-                                        <img src="/images/services-wide.png" alt="Interior Detailing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                    <div className="img-ratio-portrait">
+                                        <img src="/images/services/interior-detailing.png" alt="Interior Detailing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -129,8 +129,8 @@ export default function Services() {
                         <div className="row g-4 align-items-center" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
-                                        <img src="/images/services-wide.png" alt="Ceramic Coating" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                    <div className="img-ratio-portrait">
+                                        <img src="/images/services/ceramic-coating.jpg" alt="Ceramic Coating" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -170,8 +170,8 @@ export default function Services() {
                         <div className="row g-4 align-items-center flex-xl-row-reverse" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
-                                        <img src="/images/services-wide.png" alt="Paint Protection Film" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                    <div className="img-ratio-portrait">
+                                        <img src="/images/services/ppf-coating.jpg" alt="Paint Protection Film" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -198,7 +198,7 @@ export default function Services() {
                         <div className="row g-4 align-items-center" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
+                                    <div className="img-ratio-portrait">
                                         <img src="/images/services-wide.png" alt="Premium Vehicle Wraps" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
@@ -236,8 +236,8 @@ export default function Services() {
                         <div className="row g-4 align-items-center flex-xl-row-reverse" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
-                                        <img src="/images/services-wide.png" alt="Rubbing & Polishing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                    <div className="img-ratio-portrait">
+                                        <img src="/images/services/rubbing-polishing.jpg" alt="Rubbing & Polishing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -271,7 +271,7 @@ export default function Services() {
                         <div className="row g-4 align-items-center" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
+                                    <div className="img-ratio-portrait">
                                         <img src="/images/services-wide.png" alt="Nano & Teflon Coating" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
@@ -303,8 +303,8 @@ export default function Services() {
                         <div className="row g-4 align-items-center flex-xl-row-reverse" data-aos="fade-up">
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
-                                    <div className="img-ratio-169">
-                                        <img src="/images/services-wide.png" alt="Glass Coating" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                    <div className="img-ratio-portrait">
+                                        <img src="/images/services/glass-coating.jpg" alt="Glass Coating" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>

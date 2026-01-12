@@ -54,18 +54,27 @@ export default function Footer() {
                         <div className="mt-2">
                             <h5 className="heading">Visit Our Office</h5>
                             <hr className="border-2 my-2" />
-                            <p className="text-color-2">[Your Physical Address]</p>
+                            <p className="text-color-2">275, Ground Floor, Double Story, Bharat Nagar, Ashok Vihar, Delhi-110052</p>
                         </div>
                         <div className="mt-5">
                             <h5 className="heading">Contact Info</h5>
                             <hr className="border-2" />
-                            <a className="links-primary text-color-2 fw-normal" href="tel:[Your Phone Number]">
-                                [Your Phone Number]
-                            </a>{' '}
+                            <div className="d-flex flex-column gap-1">
+                                <a className="links-primary text-color-2 fw-normal" href="tel:+919711511413">
+                                    +91 97115 11413
+                                </a>
+                                <a className="links-primary text-color-2 fw-normal" href="tel:+918700371129">
+                                    +91 87003 71129
+                                </a>
+                                <a className="links-primary text-color-2 fw-normal" href="tel:+919958126581">
+                                    +91 99581 26581
+                                </a>
+                                <span className="text-color-2 fw-normal">Owner: Vinod Kumar</span>
+                            </div>
                             <br />
-                            <a className="links-primary text-color-2 fw-normal" href="mailto:info@sunrisedetailing.com">
+                            {/* <a className="links-primary text-color-2 fw-normal" href="mailto:info@sunrisedetailing.com">
                                 info@sunrisedetailing.com
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

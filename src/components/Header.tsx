@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import AppointmentModal from './AppointmentModal';
 import StickyVideoWidget from './StickyVideoWidget';
@@ -9,6 +9,11 @@ import StickyVideoWidget from './StickyVideoWidget';
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
   const pathname = usePathname();
+  const closeBtnRef = useRef<HTMLButtonElement>(null);
+
+  const handleLinkClick = () => {
+    closeBtnRef.current?.click();
+  };
 
   const isActive = (path: string) => pathname === path ? 'active' : '';
   const isDropdownActive = (paths: string[]) => paths.includes(pathname) ? 'active' : '';
@@ -53,59 +58,43 @@ export default function Header() {
                     className="btn-close bg-primary-color py-2 px-3 opacity-100"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"
+                    ref={closeBtnRef}
                   ></button>
                 </div>
                 <div className="offcanvas-body p-4 p-lg-0 d-flex flex-column flex-lg-row align-items-lg-center">
                   <div className="flex-grow-1 flex-lg-grow-0 mx-auto">
                     <ul className="navbar-nav flex-column flex-lg-row gap-3 gap-lg-4 gap-xl-5 align-items-lg-center">
                       <li className="nav-item border-bottom border-secondary pb-2 border-lg-0 pb-lg-0">
-                        <Link className={`nav-link ${isActive('/')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/">
+                        <Link className={`nav-link ${isActive('/')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/" onClick={handleLinkClick}>
                           Homepage
                           <i className="bi bi-chevron-right fs-6 opacity-50 d-lg-none"></i>
                         </Link>
                       </li>
                       <li className="nav-item border-bottom border-secondary pb-2 border-lg-0 pb-lg-0">
-                        <Link className={`nav-link ${isActive('/services')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/services">
+                        <Link className={`nav-link ${isActive('/services')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/services" onClick={handleLinkClick}>
                           Services
                           <i className="bi bi-chevron-right fs-6 opacity-50 d-lg-none"></i>
                         </Link>
                       </li>
-                      <li className="nav-item dropdown border-bottom border-secondary pb-2 border-lg-0 pb-lg-0">
-                        <a
-                          className={`nav-link dropdown-toggle text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center ${isDropdownActive(['/pricing', '/team'])}`}
-                          href="#"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          Pages
-                          <i className="bi bi-chevron-down fs-6 opacity-50 d-lg-none"></i>
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <Link className={`dropdown-item ${isActive('/pricing')}`} href="/pricing">
-                              Pricing Plan
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className={`dropdown-item ${isActive('/team')}`} href="/team">
-                              Team
-                            </Link>
-                          </li>
-                        </ul>
+                      <li className="nav-item border-bottom border-secondary pb-2 border-lg-0 pb-lg-0">
+                        <Link className={`nav-link ${isActive('/pricing')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/pricing" onClick={handleLinkClick}>
+                          Pricing Plan
+                          <i className="bi bi-chevron-right fs-6 opacity-50 d-lg-none"></i>
+                        </Link>
                       </li>
                       <li className="nav-item border-bottom border-secondary pb-2 border-lg-0 pb-lg-0">
-                        <Link className={`nav-link ${isActive('/about-us')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/about-us">
+                        <Link className={`nav-link ${isActive('/team')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/team" onClick={handleLinkClick}>
+                          Our Team
+                          <i className="bi bi-chevron-right fs-6 opacity-50 d-lg-none"></i>
+                        </Link>
+                      </li>
+                      <li className="nav-item border-bottom border-secondary pb-2 border-lg-0 pb-lg-0">
+                        <Link className={`nav-link ${isActive('/about-us')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/about-us" onClick={handleLinkClick}>
                           About Us
                           <i className="bi bi-chevron-right fs-6 opacity-50 d-lg-none"></i>
                         </Link>
                       </li>
-                      <li className="nav-item border-bottom border-secondary pb-2 border-lg-0 pb-lg-0">
-                        <Link className={`nav-link ${isActive('/contact-us')} text-white fs-5 fw-medium d-flex justify-content-between align-items-center fs-lg-6 fw-lg-normal justify-content-lg-center`} href="/contact-us">
-                          Contact Us
-                          <i className="bi bi-chevron-right fs-6 opacity-50 d-lg-none"></i>
-                        </Link>
-                      </li>
+
                     </ul>
                   </div>
 
@@ -142,7 +131,7 @@ export default function Header() {
 
       {/* Sticky WhatsApp Button (Left Bottom) */}
       <a
-        href="https://wa.me/1234567890" // User should replace this
+        href="https://wa.me/918700371129"
         target="_blank"
         rel="noopener noreferrer"
         className="position-fixed z-3 d-flex align-items-center justify-content-center bg-success text-white rounded-circle shadow-lg"

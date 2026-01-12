@@ -2,6 +2,7 @@ import Link from 'next/link';
 import TestimonialsCarousel from '../components/TestimonialsCarousel';
 import HeroSlider from '../components/HeroSlider';
 import Image from 'next/image';
+import BookingFormSection from '../components/BookingFormSection';
 
 export default function Home() {
   return (
@@ -67,6 +68,8 @@ export default function Home() {
       </section>
       {/* #feature end */}
 
+
+
       {/* Pricing Section */}
       <section className="section py-5 my-5">
         <div className="b-container">
@@ -90,7 +93,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -98,11 +101,11 @@ export default function Home() {
                     <i className="bi bi-car-front-fill text-black"></i>
                   </div>
                   <h4 className="heading">Exterior Detailing</h4>
-                  <p className="mt-3">
+                  <p className="mt-3 adjust">
                     Exterior Detailing is a deep-cleaning and correction process designed to restore shine, smoothness, and protection to your vehicle’s paint.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -112,7 +115,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -123,8 +126,8 @@ export default function Home() {
                   <p className="mt-3">
                     Interior Detailing restores cleanliness, comfort, and hygiene by deep-cleaning every interior surface.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -134,7 +137,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -145,8 +148,8 @@ export default function Home() {
                   <p className="mt-3">
                     Ceramic Coating creates a strong, semi-permanent protective layer that bonds with your vehicle’s paint, enhancing gloss while safeguarding the surface.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -156,7 +159,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -167,8 +170,8 @@ export default function Home() {
                   <p className="mt-3">
                     Shield your vehicle against rock chips, scratches, and road debris with our self-healing PPF invisible layer.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -178,7 +181,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -189,8 +192,8 @@ export default function Home() {
                   <p className="mt-3">
                     Vehicle wraps allow you to change your car’s appearance while protecting the original paint underneath.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -200,7 +203,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -211,8 +214,8 @@ export default function Home() {
                   <p className="mt-3">
                     Rubbing & Polishing is a paint correction process that removes surface imperfections and restores gloss.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -222,7 +225,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -233,8 +236,8 @@ export default function Home() {
                   <p className="mt-3">
                     Nano and Teflon coatings provide a protective layer that enhances shine while offering basic resistance against dust, water spots, and UV rays.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -244,7 +247,7 @@ export default function Home() {
             <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-400x400.jpg')" }}
+                style={{}}
               >
                 <div className="bg-overlay rounded-4 opacity-50"></div>
                 <div className="position-relative z-1 text-white">
@@ -255,8 +258,8 @@ export default function Home() {
                   <p className="mt-3">
                     Glass Coating creates a water-repellent layer that keeps your windshield and windows clean and clear.
                   </p>
-                  <Link href="/services" className="icon-link icon-link-hover link-opacity-50-hover text-white text-decoration-none stretched-link">
-                    Read More <i className="bi bi-arrow-right"></i>
+                  <Link href="/services" className="btn btn-cta-primary stretched-link mt-auto">
+                    Checkout <i className="bi bi-arrow-right ms-2 scale-1"></i>
                   </Link>
                 </div>
               </div>
@@ -267,7 +270,8 @@ export default function Home() {
       </section>
 
 
-
+      {/* Booking Form Section */}
+      <BookingFormSection />
       {/* Warranty section */}
       <section className="section py-5 my-5">
         <div className="container-fluid bg-secondary-color rounded-4">

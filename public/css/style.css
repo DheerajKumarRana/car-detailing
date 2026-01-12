@@ -464,8 +464,16 @@ a {
   padding: 30px;
   z-index: 2;
   transition: all 0.3s ease;
-  min-height: 21rem;
+  height: 100%;
 }
+
+.img-ratio-portrait {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+
 
 .service-box.top-left {
   top: -75%;
@@ -711,7 +719,8 @@ a {
   .hero {
     height: 100vh;
     /* min-height: 600px; */
-    min-height: 532px;
+    min-height: 500px;
+
   }
 
   .hero-content {
@@ -797,6 +806,11 @@ a {
 }
 
 @media only screen and (max-width: 768.98px) {
+
+  .service-box {
+    min-height: 16rem;
+  }
+
   .position-absolute.info-lb-overlay.aos-init.aos-animate {
     display: none;
   }
@@ -897,7 +911,7 @@ a {
   }
 
   .hero {
-    height: 85vh;
+    height: 78vh;
   }
 
   .service-icon {

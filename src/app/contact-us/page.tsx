@@ -51,7 +51,7 @@ export default function ContactUs() {
                                     </div>
                                     <h5 className="heading mt-3">Workshop Address</h5>
                                     <p className="text-color-2 fs-5 mt-3 mb-0">
-                                        <em>[Your Physical Address]</em>
+                                        <em>275, Ground Floor, Double Story, Bharat Nagar, Ashok Vihar, Delhi-110052</em>
                                     </p>
                                 </div>
                             </div>
@@ -71,9 +71,12 @@ export default function ContactUs() {
                                         <i className="bi bi-telephone-fill fs-2"></i>
                                     </div>
                                     <h5 className="heading mt-3">Call Us Anytime</h5>
-                                    <p className="text-color-2 fs-5 mt-3 mb-0">
-                                        <em>[Your Phone Number]</em>
-                                    </p>
+                                    <em>
+                                        <a href="tel:+919711511413" className="text-color-2 text-decoration-none">+91 97115 11413</a><br />
+                                        <a href="tel:+918700371129" className="text-color-2 text-decoration-none">+91 87003 71129</a><br />
+                                        <a href="tel:+919958126581" className="text-color-2 text-decoration-none">+91 99581 26581</a><br />
+                                        <span className="fs-6 mt-2 d-block">Owner: Vinod Kumar</span>
+                                    </em>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +164,7 @@ export default function ContactUs() {
                                             name="name"
                                             id="name"
                                             className="form-control form-control-lg"
-                                            placeholder="Your name here"
+                                            placeholder="Enter your name"
                                             aria-label="Name"
                                         />
                                     </div>
@@ -174,7 +177,7 @@ export default function ContactUs() {
                                             name="email"
                                             id="email"
                                             className="form-control form-control-lg"
-                                            placeholder="Your email here"
+                                            placeholder="enteryourmail@gmail.com"
                                             aria-label="Email"
                                         />
                                     </div>
@@ -189,7 +192,7 @@ export default function ContactUs() {
                                             name="phone"
                                             id="phone"
                                             className="form-control form-control-lg"
-                                            placeholder="Your number here"
+                                            placeholder="+91 Enter Mobile no."
                                             aria-label="Phone"
                                         />
                                     </div>

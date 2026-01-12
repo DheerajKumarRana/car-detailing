@@ -247,7 +247,7 @@ export default function Blogs() {
                                     name="email"
                                     id="email"
                                     className="form-control form-control-lg"
-                                    placeholder="Your email here"
+                                    placeholder="enteryourmail@gmail.com"
                                     required
                                 />
                                 <div className="invalid-feedback text-white">Please provide a valid email format (e.g., user@example.com).</div>

@@ -9088,6 +9088,11 @@ fieldset:disabled .btn {
 
 .mt-3 {
     margin-top: 1rem !important;
+
+}
+
+.mt-3.adjust {
+    min-height: 7rem;
 }
 
 .mt-4 {

@@ -1,7 +1,13 @@
+'use client';
+
+import { useState } from 'react';
+import AppointmentModal from '@/components/AppointmentModal';
 import Link from 'next/link';
 import Script from 'next/script';
 
 export default function Gallery() {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <main>
             {/* Banner section */}
@@ -155,9 +161,9 @@ export default function Gallery() {
                         <h4 className="fw-semibold">
                             Book Your Detailing Today! And Get <span className="text-primary-color">30% Cut Off</span>
                         </h4>
-                        <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                        <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                             Booking Now
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -312,6 +318,8 @@ export default function Gallery() {
 
             <Script src="/js/vendor/glightbox.min.js" strategy="afterInteractive" />
             <Script src="/js/gallery-preview.js" strategy="lazyOnload" />
+
+            <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
         </main>
     );
 }

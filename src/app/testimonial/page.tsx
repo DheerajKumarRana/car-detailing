@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
+import AppointmentModal from '@/components/AppointmentModal';
 import Link from 'next/link';
 
 export default function Testimonial() {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <main>
             {/* Banner section */}
@@ -187,13 +193,16 @@ export default function Testimonial() {
                         <h4 className="fw-semibold">
                             Book Your Detailing Today! And Get <span className="text-primary-color">30% Cut Off</span>
                         </h4>
-                        <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                        <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                             Booking Now
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>
             {/* #cta end */}
+            {/* #cta end */}
+
+            <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
         </main>
     );
 }

@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
+import AppointmentModal from '@/components/AppointmentModal';
 import Link from 'next/link';
 
 export default function FAQs() {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <main>
             {/* Banner section */}
@@ -39,7 +45,7 @@ export default function FAQs() {
                     <div className="row d-flex align-items-end g-md-5">
                         <div className="col-12 col-xl-4 text-center text-xl-end order-2">
                             <p className="text-color-2">
-                                Still Have Questions? Find Your Answers Here! or <span className="text-primary-color">Contact Us</span>
+                                Still Have Questions? Find Your Answers Here! or <button onClick={() => setShowModal(true)} className="btn p-0 text-primary-color text-decoration-underline border-0 bg-transparent">Contact Us</button>
                             </p>
                         </div>
                         <div className="col-12 col-xl-8 text-center text-xl-start order-1 order-xl-2">
@@ -573,13 +579,16 @@ export default function FAQs() {
                         <h4 className="fw-semibold">
                             Book Your Detailing Today! And Get <span className="text-primary-color">30% Cut Off</span>
                         </h4>
-                        <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                        <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                             Booking Now
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>
             {/* #cta end */}
+            {/* #cta end */}
+
+            <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
         </main>
     );
 }

@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
+import AppointmentModal from '@/components/AppointmentModal';
 import Link from 'next/link';
 
 export default function ServiceDetail() {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <main>
             {/* Banner section */}
@@ -101,9 +107,9 @@ export default function ServiceDetail() {
                                         <p className="card-text mt-3">
                                             Book Your Detailing Today! and get <span className="text-primary-color">30% cut off</span>
                                         </p>
-                                        <Link href="/contact-us" className="btn btn-lg btn-cta-primary mt-3">
+                                        <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary mt-3">
                                             Book Now
-                                        </Link>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -344,6 +350,7 @@ export default function ServiceDetail() {
                 </div>
             </section>
             {/* #service-detail end */}
+            <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
         </main>
     );
 }

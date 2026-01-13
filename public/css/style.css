@@ -911,7 +911,7 @@ a {
   }
 
   .hero {
-    height: 78vh;
+    height: 52vh;
   }
 
   .service-icon {
@@ -957,4 +957,89 @@ a {
 
 .card.bg-secondary-color.text-white.rounded-4.p-4 {
   min-height: 56rem;
+}
+
+/* ---------------------------- */
+/* Footer Redesign              */
+/* ---------------------------- */
+.footer-section {
+  background-color: #0a0a0a !important;
+  /* Deeper black for footer */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 576px) {
+  .footer-section .b-container {
+    padding-bottom: 250px !important;
+    /* Increased space for multiple sticky widgets */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-section .col-12,
+  .footer-section .col-6 {
+    margin-bottom: 2rem;
+  }
+}
+
+.cta-box {
+  margin-top: -100px;
+  /* Overlap effect */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 991.98px) {
+  .cta-box {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.footer-link,
+.footer-link:visited,
+.footer-link:active,
+.footer-link:focus {
+  color: var(--text-color-2) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+
+.footer-link:hover {
+  color: var(--primary-color) !important;
+  padding-left: 10px;
+}
+
+.footer-link:hover::before {
+  opacity: 1;
+  left: 0;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+.copyright-text {
+  font-size: 14px;
 }

@@ -1,6 +1,11 @@
+"use client";
+
 import Link from 'next/link';
+import { useState } from 'react';
+import AppointmentModal from '@/components/AppointmentModal';
 
 export default function Pricing() {
+    const [showModal, setShowModal] = useState(false);
     return (
         <main>
             {/* Banner section */}
@@ -66,9 +71,10 @@ export default function Pricing() {
                                 </div>
 
                                 {/* <p className="text-color-2 mt-4">Designed for regular maintenance, keeping your car clean and fresh.</p> */}
-                                <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
+                                {/* <p className="text-color-2 mt-4">Designed for regular maintenance, keeping your car clean and fresh.</p> */}
+                                <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary my-3">
                                     Choose This Plan
-                                </Link>
+                                </button>
 
                                 <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
                                     <h4 className="heading">Brands:</h4>
@@ -116,9 +122,10 @@ export default function Pricing() {
                                 </div>
 
                                 {/* <p className="text-color-2 mt-4">A deep clean inside and out, perfect for cars needing extra attention.</p> */}
-                                <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
+                                {/* <p className="text-color-2 mt-4">A deep clean inside and out, perfect for cars needing extra attention.</p> */}
+                                <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary my-3">
                                     Choose This Plan
-                                </Link>
+                                </button>
 
                                 <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
                                     <h4 className="heading">Brands :</h4>
@@ -169,9 +176,12 @@ export default function Pricing() {
                                 {/* <p className="text-color-2 mt-4">
                                     Perfect clean like a new car, service for cars needing more extra attention.
                                 </p> */}
-                                <Link href="/contact-us" className="btn btn-lg btn-cta-primary my-3">
+                                {/* <p className="text-color-2 mt-4">
+                                    Perfect clean like a new car, service for cars needing more extra attention.
+                                </p> */}
+                                <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary my-3">
                                     Choose This Plan
-                                </Link>
+                                </button>
 
                                 <div className="row bg-accent-color rounded-4 mt-4 py-4 px-2">
                                     <h4 className="heading">Colors:</h4>
@@ -219,9 +229,9 @@ export default function Pricing() {
                                 Obtain Your Car's History In Just Three Easy Steps.
                             </h2>
                             <div className="mt-4">
-                                <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                                <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                                     Let's Get In Touch
-                                </Link>
+                                </button>
                             </div>
                             {/* #title end */}
                             <div className="accordion mt-5" id="accordionExample">
@@ -869,6 +879,10 @@ export default function Pricing() {
                 </div>
             </section>
             {/* #faqs end */}
+            {/* <section className="section py-5 my-5">
+            </section> */}
+            {/* #blog end */}
+            <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
         </main>
     );
 }

@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
+import AppointmentModal from '@/components/AppointmentModal';
 import Link from 'next/link';
 
 export default function Services() {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <main>
             {/* Banner section */}
@@ -354,9 +360,9 @@ export default function Services() {
                         <h4 className="fw-semibold">
                             Book Your Detailing Today! And Get <span className="text-primary-color">30% Cut Off</span>
                         </h4>
-                        <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                        <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                             Booking Now
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -373,9 +379,9 @@ export default function Services() {
                                 Obtain Your Car's History In Just Three Easy Steps.
                             </h2>
                             <div className="mt-4">
-                                <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                                <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                                     Let's Get In Touch
-                                </Link>
+                                </button>
                             </div>
                             {/* #title end */}
                             <div className="accordion mt-5" id="accordionExample">
@@ -498,6 +504,8 @@ export default function Services() {
                 </div>
             </section>
             {/* #appointment end */}
+
+            <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
         </main >
     );
 }

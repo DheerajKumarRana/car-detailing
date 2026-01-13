@@ -21,10 +21,10 @@ export default function Home() {
             <div
               className="col-12 col-xl-8 d-flex flex-column justify-content-start text-center text-xl-start hero-content"
             >
-              <h1 className="fw-bolder mb-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+              <h1 className="fw-bolder mb-4" data-aos="fade-right" data-aos-delay="100" data-aos-duration="400">
                 Experience the Sunrise Difference – Where Every Detail Shines
               </h1>
-              <p className="fs-5 mb-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+              <p className="fs-5 mb-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="400">
                 Professional car detailing services that restore your vehicle's beauty from sunrise to sunset. We don't just clean cars, we bring them back to life.
               </p>
               <Link
@@ -81,7 +81,7 @@ export default function Home() {
           <div className="row text-center text-xl-start">
             <div className="col-12 col-xl-6">
               <h6 className="text-color-2">OUR SERVICES</h6>
-              <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+              <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="400">
                 Comprehensive Detailing Solutions Tailored to Your Needs
               </h2>
             </div>
@@ -95,7 +95,7 @@ export default function Home() {
           </div>
           <div className="row g-4 mt-5">
             {/* Service 1: Exterior */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
 
             {/* Service 2: Interior */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
 
             {/* Service 3: Ceramic Coating */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -161,7 +161,7 @@ export default function Home() {
             </div>
 
             {/* Service 4: PPF (Existing) */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
 
             {/* Service 5: Wraps */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -205,7 +205,7 @@ export default function Home() {
             </div>
 
             {/* Service 6: Rubbing & Polishing */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -227,7 +227,7 @@ export default function Home() {
             </div>
 
             {/* Service 7: Nano & Teflon */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="700" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -249,7 +249,7 @@ export default function Home() {
             </div>
 
             {/* Service 8: Glass Coating */}
-            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
+            <div className="col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="800" data-aos-duration="400">
               <div
                 className="service-box w-100 p-4 rounded-4 position-relative"
                 style={{}}
@@ -300,7 +300,7 @@ export default function Home() {
 
               <div className="col-12 col-xl-9">
                 <div className="row text-center text-xl-start">
-                  <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+                  <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="400">
                     Excellence, Expertise, and <br />
                     <span className="text-primary-color">Exceptional Care</span>
                   </h2>
@@ -318,7 +318,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="row mt-5">
-                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
                     <h6 className="text-primary-color fw-medium">01</h6>
                     <hr className="hr-style-1 my-4 border-2" />
                     <h5>Certified Detailing Professionals</h5>
@@ -326,7 +326,7 @@ export default function Home() {
                       Our team is professionally trained and certified in advanced detailing techniques. We stay current with industry innovations to provide you with the highest quality service available.
                     </p>
                   </div>
-                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
                     <h6 className="text-primary-color fw-medium">02</h6>
                     <hr className="hr-style-1 my-4 border-2" />
                     <h5>Premium Products & Equipment</h5>
@@ -334,7 +334,7 @@ export default function Home() {
                       We invest in the best so you get the best. From pH-balanced shampoos to professional-grade polishers and ceramic coatings, every product we use is chosen for performance and safety.
                     </p>
                   </div>
-                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
                     <h6 className="text-primary-color fw-medium">03</h6>
                     <hr className="hr-style-1 my-4 border-2" />
                     <h5>Meticulous Attention to Detail</h5>
@@ -342,7 +342,7 @@ export default function Home() {
                       We don't cut corners or rush through jobs. Every vehicle receives our complete focus, ensuring no spot is missed and every surface is treated with care and precision.
                     </p>
                   </div>
-                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                  <div className="col-12 col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="400">
                     <h6 className="text-primary-color fw-medium">04</h6>
                     <hr className="hr-style-1 my-4 border-2" />
                     <h5>Transparent & Fair Pricing</h5>
@@ -365,7 +365,7 @@ export default function Home() {
             <div className="col-12 col-xl-6">
               {/* title */}
               <h6 className="text-color-2">HOW IT WORKS</h6>
-              <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+              <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="400">
                 Get Your Car Detailed in Three Simple Steps
               </h2>
               <div className="mt-4">
@@ -470,7 +470,7 @@ export default function Home() {
                   className=" position-absolute info-lb-overlay"
                   data-aos="fade-up"
                   data-aos-delay="100"
-                  data-aos-duration="800"
+                  data-aos-duration="400"
                 >
                   <div className="d-flex flex-row text-white p-4 align-items-center">
                     <h4 className="mb-2">
@@ -509,12 +509,12 @@ export default function Home() {
         {/* Testimonials Content */}
         <div className="b-container position-relative z-1 my-5">
           <h6 className="text-color-2 text-center pt-4">CUSTOMER REVIEWS</h6>
-          <h2 className="heading text-center mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+          <h2 className="heading text-center mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
             Hear From Our Satisfied Customers
           </h2>
 
 
-          <div className="mt-5 pb-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+          <div className="mt-5 pb-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
             <TestimonialsCarousel />
           </div>
         </div>
@@ -532,7 +532,7 @@ export default function Home() {
             </div>
             <div className="col-12 col-xl-10 text-center text-lg-start">
               <div className="row">
-                <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
+                <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="400">
                   Our Commitment to Providing Premium Car Detailing Services That
                   <span className="text-primary-color">
                     Bring Out the Best in Your Vehicle, Ensuring a Showroom Shine Every Time
@@ -600,7 +600,7 @@ export default function Home() {
               </p>
             </div>
             <div className="col-12 col-xl-8 text-center text-xl-start order-1 order-xl-2">
-              <h2 className="fw-bolder" data-aos="fade-left" data-aos-delay="100" data-aos-duration="800">
+              <h2 className="fw-bolder" data-aos="fade-left" data-aos-delay="100" data-aos-duration="400">
                 Everything You Need to Know About Our <span className="text-primary-color">Detailing Services</span>
               </h2>
             </div>
@@ -656,7 +656,7 @@ export default function Home() {
                 id="faq-tab-content"
                 data-aos="fade-left"
                 data-aos-delay="350"
-                data-aos-duration="3000"
+                data-aos-duration="800"
               >
                 {/* GENERAL */}
                 <div
@@ -800,7 +800,7 @@ export default function Home() {
       {/* <section className="section py-5 my-5">
         <div className="b-container">
           <h6 className="text-color-2 text-center pt-4">BLOGS & ARTICLES</h6>
-          <h2 className="heading text-center mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="3000">
+          <h2 className="heading text-center mt-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
             Expert Tips & Insights for Car Enthusiasts
           </h2>
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5 pt-2">

@@ -34,17 +34,12 @@ export default function AboutUs() {
             <section className="section py-5 my-5">
                 <div className="b-container">
                     <div className="row mx-auto">
-                        <div className="col-12 col-xl-9">
+                        <div className="col-12">
                             <h6 className="text-color-2">KNOW US MORE</h6>
                             <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
                                 Enhancing Your <span className="text-primary-color">Driving Experience</span> with Professional Car
                                 Detailing & Maintenance
                             </h2>
-                        </div>
-                        <div className="col-12 col-xl-3 d-flex justify-content-start justify-content-xl-end align-items-xl-end pt-5">
-                            <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
-                                Let's Get In Touch
-                            </Link>
                         </div>
                     </div>
 
@@ -317,11 +312,6 @@ export default function AboutUs() {
                             <h2 className="heading" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
                                 Obtain Your Car's History In Just Three Easy Steps.
                             </h2>
-                            <div className="mt-4">
-                                <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
-                                    Let's Get In Touch
-                                </Link>
-                            </div>
                             {/* #title end */}
                             <div className="accordion mt-5" id="accordionExample">
                                 <div className="accordion-item">
@@ -683,9 +673,6 @@ export default function AboutUs() {
                         <h4 className="fw-semibold">
                             Book Your Detailing Today! And Get <span className="text-primary-color">30% Cut Off</span>
                         </h4>
-                        <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
-                            Booking Now
-                        </Link>
                     </div>
                 </div>
             </section>

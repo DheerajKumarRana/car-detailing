@@ -1,6 +1,12 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
+import AppointmentModal from '@/components/AppointmentModal';
 
 export default function Team() {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <main>
             {/* Banner section */}
@@ -52,7 +58,7 @@ export default function Team() {
                                 data-aos-duration="800"
                             >
                                 <div className="img-ratio-113">
-                                    <img src="/images/Place-Holder-600x900.jpg" alt="Raul Axios" className="img-fluid" />
+                                    <img src="/images/services/ceramic-coating.jpg" alt="Raul Axios" className="img-fluid w-100 h-100 object-fit-cover" />
                                 </div>
                                 <div className="card-img-overlay d-flex flex-column justify-content-between p-4">
                                     <div className="social-box flex-column">
@@ -91,7 +97,7 @@ export default function Team() {
                                 data-aos-duration="800"
                             >
                                 <div className="img-ratio-113">
-                                    <img src="/images/Place-Holder-600x900.jpg" alt="Ubeid Una" className="img-fluid" />
+                                    <img src="/images/services-wide.png" alt="Ubeid Una" className="img-fluid w-100 h-100 object-fit-cover" />
                                 </div>
                                 <div className="card-img-overlay d-flex flex-column justify-content-between p-4">
                                     <div className="social-box flex-column">
@@ -130,7 +136,7 @@ export default function Team() {
                                 data-aos-duration="800"
                             >
                                 <div className="img-ratio-113">
-                                    <img src="/images/Place-Holder-600x900.jpg" alt="Taki Wanabe" className="img-fluid" />
+                                    <img src="/images/services/ppf-coating.jpg" alt="Taki Wanabe" className="img-fluid w-100 h-100 object-fit-cover" />
                                 </div>
                                 <div className="card-img-overlay d-flex flex-column justify-content-between p-4">
                                     <div className="social-box flex-column">
@@ -169,7 +175,7 @@ export default function Team() {
                                 data-aos-duration="800"
                             >
                                 <div className="img-ratio-113">
-                                    <img src="/images/Place-Holder-600x900.jpg" alt="Hafsha Jasmine" className="img-fluid" />
+                                    <img src="/images/services/exterior-detailing.jpg" alt="Hafsha Jasmine" className="img-fluid w-100 h-100 object-fit-cover" />
                                 </div>
                                 <div className="card-img-overlay d-flex flex-column justify-content-between p-4">
                                     <div className="social-box flex-column">
@@ -208,7 +214,7 @@ export default function Team() {
                                 data-aos-duration="800"
                             >
                                 <div className="img-ratio-113">
-                                    <img src="/images/Place-Holder-600x900.jpg" alt="Akio Mirfaq" className="img-fluid" />
+                                    <img src="/images/services/interior-detailing.png" alt="Akio Mirfaq" className="img-fluid w-100 h-100 object-fit-cover" />
                                 </div>
                                 <div className="card-img-overlay d-flex flex-column justify-content-between p-4">
                                     <div className="social-box flex-column">
@@ -247,7 +253,7 @@ export default function Team() {
                                 data-aos-duration="800"
                             >
                                 <div className="img-ratio-113">
-                                    <img src="/images/Place-Holder-600x900.jpg" alt="Rizzy Alvarez" className="img-fluid" />
+                                    <img src="/images/services/rubbing-polishing.jpg" alt="Rizzy Alvarez" className="img-fluid w-100 h-100 object-fit-cover" />
                                 </div>
                                 <div className="card-img-overlay d-flex flex-column justify-content-between p-4">
                                     <div className="social-box flex-column">
@@ -297,13 +303,16 @@ export default function Team() {
                         <h4 className="fw-semibold">
                             Book Your Detailing Today! And Get <span className="text-primary-color">30% Cut Off</span>
                         </h4>
-                        <Link href="/contact-us" className="btn btn-lg btn-cta-primary">
+                        <button onClick={() => setShowModal(true)} className="btn btn-lg btn-cta-primary">
                             Booking Now
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>
             {/* #cta end */}
+            {/* #cta end */}
+
+            <AppointmentModal show={showModal} onClose={() => setShowModal(false)} />
         </main>
     );
 }

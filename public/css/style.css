@@ -749,7 +749,8 @@ a {
 
   .img-ratio-121 {
     position: relative;
-    aspect-ratio: 21 / 9;
+    aspect-ratio: 3 / 4;
+    /* Changed from 21/9 to portrait for mobile */
     overflow: hidden;
   }
 
@@ -769,7 +770,8 @@ a {
 
 @media only screen and (max-width: 991.98px) {
   .section {
-    padding: 4em 1em;
+    padding: 3em 1em;
+    /* Reduced from 4em 1em */
   }
 
   h1 {
@@ -970,7 +972,7 @@ a {
 
 @media (max-width: 576px) {
   .footer-section .b-container {
-    padding-bottom: 250px !important;
+    /* padding-bottom: 250px !important; */
     /* Increased space for multiple sticky widgets */
     padding-left: 20px;
     padding-right: 20px;
@@ -979,6 +981,17 @@ a {
   .footer-section .col-12,
   .footer-section .col-6 {
     margin-bottom: 2rem;
+  }
+
+  .b-container.position-relative.z-1.my-5 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .mt-5.pb-5.aos-init.aos-animate {
+    padding-bottom: 0px !important;
+
   }
 }
 

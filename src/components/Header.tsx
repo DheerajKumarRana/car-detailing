@@ -104,9 +104,9 @@ export default function Header() {
                       Make Appointment
                     </button>
                     <div className="d-flex justify-content-center gap-4 mt-4 opacity-75">
-                      <a href="#" className="text-white fs-5"><i className="bi bi-instagram"></i></a>
-                      <a href="#" className="text-white fs-5"><i className="bi bi-facebook"></i></a>
-                      <a href="#" className="text-white fs-5"><i className="bi bi-twitter-x"></i></a>
+                      <a href="https://www.instagram.com/sunrise_detailing_car_care_?igsh=amcxeTUydTljOHlm" target="_blank" rel="noopener noreferrer" className="text-white fs-5"><i className="bi bi-instagram"></i></a>
+                      <a href="https://www.facebook.com/share/185wge3GUS/" target="_blank" rel="noopener noreferrer" className="text-white fs-5"><i className="bi bi-facebook"></i></a>
+                      <a href="https://youtube.com/@sunrisedetailingcarcare-v5o?si=NY0-Ib9e_zrcsboO" target="_blank" rel="noopener noreferrer" className="text-white fs-5"><i className="bi bi-youtube"></i></a>
                     </div>
                   </div>
 

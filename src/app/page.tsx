@@ -460,9 +460,9 @@ export default function Home() {
               <div className="img-wrapper position-relative mx-auto">
                 <div className="img-ratio-121">
                   <img
-                    src="/images/Place-Holder-1920x1280.jpg"
-                    alt="Car Grille and Headlight"
-                    className="w-100 h-100 position-absolute rounded-4"
+                    src="/images/services/premium-vehicle-wraps.jpg"
+                    alt="Car Detailing Service"
+                    className="w-100 h-100 position-absolute rounded-4 object-fit-cover"
                     style={{ inset: 0 }}
                   />
                 </div>

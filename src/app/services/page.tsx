@@ -12,7 +12,8 @@ export default function Services() {
             {/* Banner section */}
             <section
                 className="section position-relative"
-                style={{ backgroundImage: "url('/images/Place-Holder-1920x1280.jpg')", minHeight: '40vh' }}
+                style={{ backgroundImage: "url('/images/board.jpg')", minHeight: '40vh' }}
+
             >
                 <div className="bg-overlay"></div>
                 <div className="b-container h-100 position-relative z-2">
@@ -98,7 +99,7 @@ export default function Services() {
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
                                     <div className="img-ratio-portrait">
-                                        <img src="/images/services/interior-detailing.png" alt="Interior Detailing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                        <img src="/images/services/interior-detailing-new.jpg" alt="Interior Detailing" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +206,7 @@ export default function Services() {
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
                                     <div className="img-ratio-portrait">
-                                        <img src="/images/services-wide.png" alt="Premium Vehicle Wraps" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                        <img src="/images/services/premium-vehicle-wraps.jpg" alt="Premium Vehicle Wraps" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +279,7 @@ export default function Services() {
                             <div className="col-12 col-xl-6">
                                 <div className="img-wrapper rounded-4 overflow-hidden position-relative">
                                     <div className="img-ratio-portrait">
-                                        <img src="/images/services-wide.png" alt="Nano & Teflon Coating" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
+                                        <img src="/images/services/nano-teflon-coating.jpg" alt="Nano & Teflon Coating" className="w-100 h-100 object-fit-cover position-absolute top-0 start-0" />
                                     </div>
                                 </div>
                             </div>
@@ -369,7 +370,7 @@ export default function Services() {
             {/* #cta end */}
 
             {/* Appointment section */}
-            <section className="section py-5 my-5">
+            <section className="section py-5 my-2 my-lg-5">
                 <div className="b-container">
                     <div className="row mx-auto">
                         <div className="col-12 col-xl-6">
@@ -476,9 +477,9 @@ export default function Services() {
                             <div className="img-wrapper position-relative mx-auto">
                                 <div className="img-ratio-121">
                                     <img
-                                        src="/images/Place-Holder-1920x1280.jpg"
-                                        alt="Car Grille and Headlight"
-                                        className="w-100 h-100 position-absolute rounded-4"
+                                        src="/images/services/premium-vehicle-wraps.jpg"
+                                        alt="Car Detailing Service"
+                                        className="w-100 h-100 position-absolute rounded-4 object-fit-cover"
                                         style={{ inset: 0 }}
                                     />
                                 </div>

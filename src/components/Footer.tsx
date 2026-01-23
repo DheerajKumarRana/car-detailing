@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <footer className="footer-section position-relative bg-secondary-color pt-5">
             {/* CTA Section */}
-            <div className="container position-relative z-2 mb-5">
+            <div className="container position-relative z-2 mb-3 mb-lg-5">
                 <div className="cta-box bg-accent-color rounded-4 p-4 p-lg-5 d-flex flex-column flex-lg-row align-items-center justify-content-between text-center text-lg-start">
                     <div className="mb-4 mb-lg-0">
                         <h2 className="heading text-white mb-2">Ready to Transform Your Car?</h2>
@@ -23,7 +23,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="b-container position-relative z-1 pt-4 pb-5">
+            <div className="b-container position-relative z-1 pt-4 pb-3 pb-lg-5">
                 <div className="row g-4 g-lg-5">
                     {/* Brand Column */}
                     <div className="col-12 col-lg-4 mb-4 mb-lg-0">
@@ -34,10 +34,9 @@ export default function Footer() {
                             Providing Premium Car Detailing Services That Bring Out the Best in Your Vehicle, Ensuring a Showroom Shine Every Time.
                         </p>
                         <div className="social-icons d-flex gap-3">
-                            <a href="#" className="social-link" aria-label="Facebook"><i className="bi bi-facebook"></i></a>
-                            <a href="#" className="social-link" aria-label="Instagram"><i className="bi bi-instagram"></i></a>
-                            <a href="#" className="social-link" aria-label="Twitter"><i className="bi bi-twitter-x"></i></a>
-                            <a href="#" className="social-link" aria-label="YouTube"><i className="bi bi-youtube"></i></a>
+                            <a href="https://www.facebook.com/share/185wge3GUS/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook"><i className="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/sunrise_detailing_car_care_?igsh=amcxeTUydTljOHlm" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram"><i className="bi bi-instagram"></i></a>
+                            <a href="https://youtube.com/@sunrisedetailingcarcare-v5o?si=NY0-Ib9e_zrcsboO" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="YouTube"><i className="bi bi-youtube"></i></a>
                         </div>
                     </div>
 
@@ -87,7 +86,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <hr className="border-secondary my-5 opacity-25" />
+                <hr className="border-secondary my-3 my-lg-5 opacity-25" />
 
                 <div className="row align-items-center">
                     <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
